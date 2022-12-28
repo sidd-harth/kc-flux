@@ -1,0 +1,22 @@
+{
+    "title": "Flux - Lab 1",
+    "description": "Install Flux on a single node Kubernetes cluster",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Install Flux CLI",
+          "text": "step1.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
+  
