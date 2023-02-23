@@ -1,14 +1,18 @@
 {
     "title": "Flux - Lab 1",
-    "description": "Install Flux on a single node Kubernetes cluster",
+    "description": "Installing Flux CLI and deploy Flux Server on a single node Kubernetes cluster",
     "details": {
       "intro": {
         "text": "intro.md"
       },
       "steps": [
         {
-          "title": "Install Flux CLI",
+          "title": "Generate GitHub PAT",
           "text": "step1.md"
+        },
+        {
+          "title": "Install Flux CLI",
+          "text": "step2.md"
         }
       ],
       "finish": {
