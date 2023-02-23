@@ -1,5 +1,5 @@
 {
-    "title": "Flux - Lab 1",
+    "title": "Lab 1 - Setup Flux CLI and Server",
     "description": "Installing Flux CLI and deploy Flux Server on a single node Kubernetes cluster",
     "details": {
       "intro": {
@@ -13,6 +13,14 @@
         {
           "title": "Install Flux CLI",
           "text": "step2.md"
+        },
+        {
+          "title": "Install Flux Server",
+          "text": "step3.md"
+        },
+        {
+          "title": "Explore GitHub and K8S Cluster",
+          "text": "step4.md"
         }
       ],
       "finish": {
