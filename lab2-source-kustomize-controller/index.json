@@ -1,0 +1,36 @@
+{
+    "title": "Lab 1 - Setup Flux CLI and Server",
+    "description": "Installing Flux CLI and deploy Flux Server on a single node Kubernetes cluster",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Generate GitHub PAT",
+          "text": "step1.md"
+        },
+        {
+          "title": "Install Flux CLI",
+          "text": "step2.md"
+        },
+        {
+          "title": "Install Flux Server",
+          "text": "step3.md"
+        },
+        {
+          "title": "Explore GitHub and K8S Cluster",
+          "text": "step4.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
+  
