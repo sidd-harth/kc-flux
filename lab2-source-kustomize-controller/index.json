@@ -1,6 +1,6 @@
 {
-    "title": "Lab 1 - Setup Flux CLI and Server",
-    "description": "Installing Flux CLI and deploy Flux Server on a single node Kubernetes cluster",
+    "title": "Lab 2 - Source and Kustomize Controller",
+    "description": "Deloying Application using Source and Kustomize Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",
@@ -9,20 +9,12 @@
       },
       "steps": [
         {
-          "title": "Generate GitHub PAT",
+          "title": "Install Flux Server",
           "text": "step1.md"
         },
         {
-          "title": "Install Flux CLI",
+          "title": "Explore GitHub Repo",
           "text": "step2.md"
-        },
-        {
-          "title": "Install Flux Server",
-          "text": "step3.md"
-        },
-        {
-          "title": "Explore GitHub and K8S Cluster",
-          "text": "step4.md"
         }
       ],
       "finish": {

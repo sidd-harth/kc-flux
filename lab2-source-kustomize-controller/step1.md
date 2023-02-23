@@ -1,12 +1,28 @@
+### Check Flux CLI Version
+Flux CLI is already installed for you, check it's version to confirm
 
-### Before we install Flux, you need to have access to a GitHub Account.
-- Please [create a GitHub Account](https://github.com/signup) if required.
-- [Login to GitHub Account](https://github.com/login)
+`flux -v`{{exec}}
 
+### Install/Setup Flux Server
+You can set up Flux to manage itself from a Git repository and install it on a Kubernetes cluster using the `flux bootstrap` command.
 
-### Create a Personal Access Token Classic
-1. [Follow the steps provided in this doc](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
-	- For Scope select `repo`
-	- Set expiration as `90 days`
-	- Generate Token
-	- Copy and store the Token on your local machine
+Copy the below command, replace the value field and run it,
+
+`export GH_USERNAME=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>>`{{exec}}
+
+```
+flux bootstrap github \
+  --owner=$GH_USERNAME \
+  --repository=block-buster \
+  --path=flux-clusters/dev-cluster \
+  --personal=true \
+  --private=false
+```{{exec}}
+
+### GitHub Personal Access Token - PAT
+- It will prompt for a `GitHub Personal Access Token - PAT`
+- Copy-Paste the token, which was generated in earlier step.
+- Wait for the command to complete the `bootstraping` process.
+- Check the logs to understand what is happening.
+
+Wait till the `bootstrap` is successfully completed!!

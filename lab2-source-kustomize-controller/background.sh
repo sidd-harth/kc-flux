@@ -12,5 +12,8 @@
 #         echo namespace flux-system does not exists
 # fi
 
-sleep 120
 curl -s https://fluxcd.io/install.sh | sudo bash
+
+sleep 2
+
+git clone https://github.com/sid-demo/bb-app-source

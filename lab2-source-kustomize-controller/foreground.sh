@@ -1,4 +1,5 @@
-echo "Please Wait"
+#!/bin/bash
+echo "Please Wait for 100 seconds"
 echo "Setting up Lab Pre-requisites"
-while [ ! command -v flux ]; do sleep 1; done
+echo 100
 echo DONE
