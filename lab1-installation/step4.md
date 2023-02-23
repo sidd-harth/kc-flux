@@ -4,10 +4,10 @@
     - Explore this repo and check that the `bootstrap` command has committed all `Flux` related artefacts.
 
 ### Explore `flux-system` namespace
-The `bootstrap` command creates a new namespace named `flux-system`. Check it out,
+The `bootstrap` command creates a new namespace named `flux-system`.
 
 `k -n flux-system get all`{{exec}}
 
-### Check newly created CRDS
+### Check newly created `CRDS`
 
 `k get crds | grep -i flux`{{exec}}

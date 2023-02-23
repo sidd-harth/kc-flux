@@ -8,7 +8,7 @@ You can set up Flux to manage itself from a Git repository and install it on a K
 
 Copy the below command, replace the value field and run it,
 
-`export GH_USERNAME=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>>`{{exec}}
+`export GH_USERNAME=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>>`{{copy}}
 
 ```
 flux bootstrap github \
@@ -25,4 +25,4 @@ flux bootstrap github \
 - Wait for the command to complete the `bootstraping` process.
 - Check the logs to understand what is happening.
 
-Wait till the `bootstrap` is successfully completed!!
+Wait till you see this log message `✔ all components are healthy` and then click on `NEXT`.
