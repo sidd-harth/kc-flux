@@ -1,16 +1,18 @@
 ### Check Kubernetes Version
 Before we install Flux, Make sure your Kubernetes cluster is running a version greater than or equal to 1.20.6.
 
-``` flux check --pre ``` {{exec}}
+`flux check --pre` {{exec}}
 
 ### Install/Setup Flux Server
 You can set up Flux to manage itself from a Git repository and install it on a Kubernetes cluster using the `flux bootstrap` command.
 
-Copy the below command, replace the `owner` field and run it,
+Copy the below command, replace the value field and run it,
+
+export GH_USERNAME=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>>
 
 ```
 flux bootstrap github \
-  --owner=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>> \
+  --owner=$GH_USERNAME \
   --repository=block-buster \
   --path=flux-clusters/dev-cluster \
   --personal=true \
