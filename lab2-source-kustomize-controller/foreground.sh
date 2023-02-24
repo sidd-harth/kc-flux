@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "Please Wait for 100 seconds"
-echo "Setting up Lab Pre-requisites"
-echo 100
+echo " "
+echo "----------- Please Wait for 100 seconds. Setting up Lab Pre-requisites -----------"
+echo " "
+sleep 100
 echo DONE
