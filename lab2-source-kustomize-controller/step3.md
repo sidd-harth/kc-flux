@@ -19,9 +19,21 @@ Copy all 3 manifests from `bb-app-source` repo `1-demo` branch to `1-demo` direc
 
 `cp ~/bb-app-source/manifests/service.yml ~/block-buster/flux-clusters/dev-cluster/1-demo`{{exec}}
 
-### Push the changes
+`ll ~/block-buster/flux-clusters/dev-cluster/1-demo`{{exec}}
+
+### Add, Commit, Push the changes
+When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps
+
 `cd ~/block-buster`{{exec}}
 
+`git config --global user.email "demo@flux.com"`{{exec}}
+
+`git config --global user.name "FluxCD"`{{exec}}
+
 `git pull`{{exec}}
+
+`git add .`{{exec}}
+
+`git commit -m 1-demo`{{exec}}
 
 `git push`{{exec}}
