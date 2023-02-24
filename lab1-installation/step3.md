@@ -13,7 +13,7 @@ Run a bootstrap command with below specification:
   - Path: `flux-clusters/dev-cluster`
   - Personal: `true`
   - Private: `false`
-  - Version: `0.40.0`
+  - Version: `v0.40.0`
 
 
 <details><summary>Check Solution</summary>
@@ -22,7 +22,7 @@ Copy the below command, replace the value field and run it,
 
 ```
 export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
-```
+```{{copy}}
 ----
 ```
 flux bootstrap github \
@@ -31,10 +31,12 @@ flux bootstrap github \
   --path=flux-clusters/dev-cluster \
   --personal=true \
   --private=false \
-  --version=0.40.0
+  --version=v0.40.0
 ```{{exec}}
 
 </details>
+
+<br>
 
 #### GitHub Personal Access Token - PAT
 - It will prompt for a `GitHub Personal Access Token - PAT`
