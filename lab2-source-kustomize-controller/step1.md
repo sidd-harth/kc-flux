@@ -1,14 +1,18 @@
 ### Check Flux CLI Version
 Flux CLI is already installed for you, check it's version to confirm
 
-`flux -v`{{exec}}
+```
+flux -v
+```{{exec}}
 
 ### Install/Setup Flux Server
 You can set up Flux to manage itself from a Git repository and install it on a Kubernetes cluster using the `flux bootstrap` command.
 
 Copy the below command, replace the value field and run it,
 
-`export GH_USERNAME=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>>`{{copy}}
+```
+export GH_USERNAME=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>>
+```{{copy}}
 
 ```
 flux bootstrap github \

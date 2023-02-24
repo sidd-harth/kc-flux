@@ -6,8 +6,12 @@
 ### Explore `flux-system` namespace
 The `bootstrap` command creates a new namespace named `flux-system`.
 
-`k -n flux-system get all`{{exec}}
+```
+k -n flux-system get all
+```{{exec}}
 
 ### Check newly created `CRDS`
 
-`k get crds | grep -i flux`{{exec}}
+```
+k get crds | grep -i flux
+```{{exec}}

@@ -1,18 +1,26 @@
 ### Check Commit ID `block-buster` repo
-`cd ~/block-buster`{{exec}}
+```
+cd ~/block-buster
+```{{exec}}
 
-`git branch -v`{{exec}}
+```
+git branch -v
+```{{exec}}
 
 ### Check Flux Source Status
 As soon as the manifests are pushed to the repository, Flux will pull manifests and reconcile the cluster to deploy all the manifests.
 
 ##### Check Flux Git Source Status
-`flux get source git flux-system`{{exec}}
+```
+flux get source git flux-system
+```{{exec}}
 
 Check the commit id in Message matching the earlier branch commit id. It means that flux pulled the latests manifests.
 
 ##### Check Flux Kustomization Status 
-`flux get kustomization flux-system`{{exec}}
+```
+flux get kustomization flux-system
+```{{exec}}
 
 Check the commit id in Message matching the earlier branch commit id. It means that flux reconciled the latests manifests.
 
@@ -31,4 +39,4 @@ k -n 1-demo get all
 
 Now access Block Buster App - version 7.1.0 using this link:
 
-[ACCESS Block Buster App - 7.1.0]({{TRAFFIC_HOST1_30001}})
+[Play Block Buster App - 7.1.0]({{TRAFFIC_HOST1_30001}})
