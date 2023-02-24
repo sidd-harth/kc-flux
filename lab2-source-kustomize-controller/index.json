@@ -17,8 +17,12 @@
           "text": "step2.md"
         },
         {
-          "title": "Moving Manifest Files",
+          "title": "Commit Manifest Files",
           "text": "step3.md"
+        },
+        {
+          "title": "Access the Application",
+          "text": "step4.md"
         }
       ],
       "finish": {

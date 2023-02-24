@@ -13,12 +13,16 @@ Copy the below command, replace the value field and run it,
 ### Copy manifests to `block-buster` repo
 Copy all 3 manifests from `bb-app-source` repo `1-demo` branch to `1-demo` directory within `block-buster` repo
 
+##### Copying deployment.yml
 `cp ~/bb-app-source/manifests/deployment.yml ~/block-buster/flux-clusters/dev-cluster/1-demo`{{exec}}
 
+##### Copying namespace.yml
 `cp ~/bb-app-source/manifests/namespace.yml ~/block-buster/flux-clusters/dev-cluster/1-demo`{{exec}}
 
+##### Copying service.yml
 `cp ~/bb-app-source/manifests/service.yml ~/block-buster/flux-clusters/dev-cluster/1-demo`{{exec}}
 
+##### Listing 1-demo directory
 `ll ~/block-buster/flux-clusters/dev-cluster/1-demo`{{exec}}
 
 ### Add, Commit, Push the changes
