@@ -3,6 +3,8 @@
     "description": "Installing Flux CLI and deploy Flux Server on a single node Kubernetes cluster",
     "details": {
       "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
         "text": "intro.md"
       },
       "steps": [
