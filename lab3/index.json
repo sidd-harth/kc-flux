@@ -1,6 +1,6 @@
 {
-    "title": "Lab 2 - Source and Kustomize Controller Reconcile from Flux Repo",
-    "description": "Deloying manifests from Flux repo using Source and Kustomize Controller",
+    "title": "Lab 3 - Source and Kustomize Controller Reconcile from External Repos",
+    "description": "Deloying manifests from external repo using Source and Kustomize Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",
@@ -17,15 +17,15 @@
           "text": "step2.md"
         },
         {
-          "title": "Commit Manifest Files",
+          "title": "Create a Flux Source",
           "text": "step3.md"
         },
         {
-          "title": "Access the Application",
+          "title": "Create a Flux Kustomization",
           "text": "step4.md"
         },
         {
-          "title": "Manual Reconcilation",
+          "title": "Check Flux Status and App",
           "text": "step5.md"
         }
       ],
