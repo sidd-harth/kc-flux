@@ -23,6 +23,10 @@
         {
           "title": "Access the Application",
           "text": "step4.md"
+        },
+        {
+          "title": "Manual Reconcilation",
+          "text": "step5.md"
         }
       ],
       "finish": {
