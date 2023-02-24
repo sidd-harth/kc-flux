@@ -1,10 +1,12 @@
 #### Check Flux Source Status
 As soon as the manifests are pushed to the repository, Flux will pull manifests and reconcile the cluster to deploy all the manifests.
 
+<br>
+
 #### Check Flux Source Status
 - Run a `flux` cmd to `get` the `source` status using below spec:
-        - Type: `git`
-        - Name: `flux-system`
+    - Type: `git`
+    - Name: `flux-system`
 
 Check the commit id in **Message** matching the earlier branch commit id. It means that flux pulled the latests manifests.
 

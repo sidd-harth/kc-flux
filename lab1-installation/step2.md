@@ -1,6 +1,7 @@
-#### Install Flux CLI
-- You can follow the official [Flux CD documentation](https://fluxcd.io/flux/installation/#install-the-flux-cli)
-- If you are not sure, `click` on below **`Check Solution`**
+#### Flux CLI
+- Install Flux CLI using `bash` for `Linux`
+    - You can follow the official [Flux CD documentation](https://fluxcd.io/flux/installation/#install-the-flux-cli)
+    - If you are not sure, `click` on below **`Check Solution`**
 
 <details><summary>Check Solution</summary>
 

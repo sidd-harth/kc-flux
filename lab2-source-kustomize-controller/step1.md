@@ -22,7 +22,6 @@ flux bootstrap github \
   --personal=true \
   --private=false \
   --version=v0.40.0
-
 ```{{exec}}
 
 GitHub Personal Access Token - PAT
