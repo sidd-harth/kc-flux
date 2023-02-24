@@ -15,7 +15,7 @@ git clone https://github.com/$GH_USERNAME/block-buster
 #### Create a `flux source` to pull from `bb-app-source`
 - Generate a `flux source` with the following spec:
     - Name: `2-demo-source-git-bb-app`
-    - URL: `<<add-YOUR-github-url-block-buster-app>>`
+    - URL: `<<add-YOUR-github-url-block-buster>>`
     - Branch: `2-demo`
     - Timeout: `10s`
     - Export Path: `~/block-buster/flux-clusters/dev-cluster/2-demo-source-git-bb-app.yml`

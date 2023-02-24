@@ -18,6 +18,8 @@ source ~/.bashrc
 
 curl -s https://fluxcd.io/install.sh | sudo bash
 
+. <(flux completion bash)
+
 sleep 2
 
 git clone https://github.com/sid-demo/bb-app-source

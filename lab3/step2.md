@@ -3,6 +3,8 @@
 - Explore it `cd bb-app-source`
 - Open this [repository](https://github.com/sid-demo/bb-app-source) in browser tab and check branch **2-demo**
 
+<br>
+
 #### Explore `2-demo` branch 
 Change to `bb-app-source` repo directory and Checkout `2-demo` branch
 
@@ -19,5 +21,5 @@ tree manifests/
 Check `image tag - 7.2.0` within `deployment.yml`
 
 ```
-cat deployment.yml | grep -i image
+cat ~/bb-app-source/manifests/deployment.yml | grep -i 7.2.0
 ```{{exec}}

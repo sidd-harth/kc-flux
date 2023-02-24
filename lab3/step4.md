@@ -14,7 +14,7 @@
 flux create kustomization 2-demo-kustomize-git-bb-app \
 --source GitRepository/2-demo-source-git-bb-app \
 --prune true \
---interval 100s \
+--interval 10s \
 --target-namespace 2-demo \
 --path manifests  \
 --export > ~/block-buster/flux-clusters/dev-cluster/2-demo-kustomize-git-bb-app.yml
@@ -38,7 +38,7 @@ git config --global user.email "fluxcd@killercoda.com"
 git config --global user.name "FluxCD-Killercoda"
 git pull
 git add .
-git commit -m 1-demo
+git commit -m 2-demo
 git push
 ```{{exec}}
 

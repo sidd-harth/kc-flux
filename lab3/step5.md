@@ -13,6 +13,8 @@ Check the commit id in **Message** matching the earlier branch commit id. It mea
 <details><summary>Check Solution</summary>
 
 ```
+flux reconcile source git flux-system
+
 flux get source git 2-demo-source-git-bb-app
 ```{{exec}}
 
