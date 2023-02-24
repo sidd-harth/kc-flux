@@ -9,9 +9,11 @@ Change to `bb-app-source` repo directory
 `cd bb-app-source`{{exec}}
 
 Checkout `1-demo` branch
+
 `git checkout 1-demo`{{exec}}
 
 Check all 3 `K8S` manifests
+
 `ls -ltr manifests`{{exec}}
 
 `cat manifests/service.yml`{{exec}}

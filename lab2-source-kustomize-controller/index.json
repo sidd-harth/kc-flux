@@ -15,6 +15,10 @@
         {
           "title": "Explore GitHub Repo",
           "text": "step2.md"
+        },
+        {
+          "title": "Moving Manifest Files",
+          "text": "step3.md"
         }
       ],
       "finish": {
