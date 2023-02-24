@@ -15,14 +15,15 @@ Run a bootstrap command with below specification:
   - Private: `false`
   - Version: `0.40.0`
 
-Copy the below command, replace the value field and run it,
 
 <details><summary>Check Solution</summary>
 
-```
-export GH_USERNAME=<<<<REPLACE-WITH-YOUR-GITHUB-USERNAME>>>
-```{{copy}}
+Copy the below command, replace the value field and run it,
 
+```
+export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
+```
+----
 ```
 flux bootstrap github \
   --owner=$GH_USERNAME \
@@ -34,6 +35,7 @@ flux bootstrap github \
 ```{{exec}}
 
 </details>
+
 #### GitHub Personal Access Token - PAT
 - It will prompt for a `GitHub Personal Access Token - PAT`
 - Copy-Paste the token, which was generated in earlier step.
