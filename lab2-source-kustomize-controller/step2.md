@@ -17,15 +17,11 @@ ls -ltr manifests
 Check all 3 `K8S` manifests
 
 ```
-ls -ltr manifests
-```{{exec}}
-
-```
-cat manifests/service.yml
+cat manifests/deployment.yml
 echo "-----------------------------------------------------"
 cat manifests/namespace.yml
 echo "-----------------------------------------------------"
-cat manifests/deployment.yml
+cat manifests/service.yml
 ```{{exec}}
 
 #### Check `image` name and `tag` in deployment specification

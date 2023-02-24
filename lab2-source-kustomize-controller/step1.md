@@ -20,12 +20,14 @@ flux bootstrap github \
   --repository=block-buster \
   --path=flux-clusters/dev-cluster \
   --personal=true \
-  --private=false
+  --private=false \
+  --version=v0.40.0
+
 ```{{exec}}
 
-#### GitHub Personal Access Token - PAT
-- It will prompt for a `GitHub Personal Access Token - PAT`
-- Copy-Paste the token, which was generated earlier.
+GitHub Personal Access Token - PAT
+- `Bootstrap` will prompt for a `GitHub Personal Access Token - PAT`
+- Copy-Paste the token, which was generated/saved in earlier step.
 - Wait for the command to complete the `bootstraping` process.
 - Check the logs to understand what is happening.
 

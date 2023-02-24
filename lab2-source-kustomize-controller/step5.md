@@ -4,7 +4,7 @@
 As of now the app deployment has only 1 replica, which results in 1 running pod.
 
 ```
-k -n 1-demo get all
+k -n 1-demo get pod
 ```{{exec}}
 
 #### Increase Replicas and Commit
@@ -25,7 +25,7 @@ git push
 ```{{exec}}
 
 #### Reconcilation of Git Source
-Run a `flux` cmd to manually `reconcile` a `source` using below spec:
+- Run a `flux` cmd to manually `reconcile` a `source` using below spec:
     - Operation: `reconcile`
     - Type: `source`
     - Source: `git`
@@ -42,7 +42,7 @@ flux reconcile source git flux-system
 <br>
 
 #### Reconcilation of Kustomization
-Run a `flux` cmd to manually `reconcile` a `kustomization` using below spec:
+- Run a `flux` cmd to manually `reconcile` a `kustomization` using below spec:
     - Operation: `reconcile`
     - Type: `kustomization`
     - Name: `flux-system`
@@ -62,5 +62,5 @@ flux reconcile kustomization flux-system
 Earlier the app deployment had only 1 replica, now it should have 3 running pods.
 
 ```
-k -n 1-demo get all
+k -n 1-demo get pod
 ```{{exec}}

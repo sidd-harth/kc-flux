@@ -7,19 +7,20 @@ flux check --pre
 
 #### Install/Setup Flux Server
 You can set up Flux to manage itself from a Git repository and install it on a Kubernetes cluster using the `flux bootstrap` command.
-Run a bootstrap command with below specification:
-  - Owner: `your-github-user-name`
-  - Repository: `block-buster` 
-  - Path: `flux-clusters/dev-cluster`
-  - Personal: `true`
-  - Private: `false`
-  - Version: `v0.40.0`
+
+  - Run a bootstrap command with below specification:
+    - Owner: `your-github-user-name`
+    - Repository: `block-buster` 
+    - Path: `flux-clusters/dev-cluster`
+    - Personal: `true`
+    - Private: `false`
+    - Version: `v0.40.0`
 
 GitHub Personal Access Token - PAT
-- `Bootstrap` will prompt for a `GitHub Personal Access Token - PAT`
-- Copy-Paste the token, which was generated/saved in earlier step.
-- Wait for the command to complete the `bootstraping` process.
-- Check the logs to understand what is happening.
+  - `Bootstrap` will prompt for a `GitHub Personal Access Token - PAT`
+  - Copy-Paste the token, which was generated/saved in earlier step.
+  - Wait for the command to complete the `bootstraping` process.
+  - Check the logs to understand what is happening.
 
 <details><summary>Check Solution</summary>
 
