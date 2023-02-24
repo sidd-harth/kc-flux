@@ -10,3 +10,5 @@
 	- Set expiration as `90 days`
 	- Generate Token
 	- Copy and store the Token on your local machine
+
+> Store the `token` safely on your local machine, we will use this `token` in all the following labs

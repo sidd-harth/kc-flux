@@ -1,12 +1,12 @@
-### Check Flux CLI Version
+#### Check Flux CLI Version
 Flux CLI is already installed for you, check it's version to confirm
 
 ```
 flux -v
 ```{{exec}}
 
-### Install/Setup Flux Server
-You can set up Flux to manage itself from a Git repository and install it on a Kubernetes cluster using the `flux bootstrap` command.
+#### Install/Setup Flux Server
+> For each lab we are using a NEW K8S Cluster and hence for each and every lab we have to manually run the below bootstrap command 
 
 Copy the below command, replace the value field and run it,
 
@@ -23,7 +23,7 @@ flux bootstrap github \
   --private=false
 ```{{exec}}
 
-### GitHub Personal Access Token - PAT
+#### GitHub Personal Access Token - PAT
 - It will prompt for a `GitHub Personal Access Token - PAT`
 - Copy-Paste the token, which was generated earlier.
 - Wait for the command to complete the `bootstraping` process.

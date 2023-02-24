@@ -15,6 +15,11 @@ Run a bootstrap command with below specification:
   - Private: `false`
   - Version: `v0.40.0`
 
+#### GitHub Personal Access Token - PAT
+- It will prompt for a `GitHub Personal Access Token - PAT`
+- Copy-Paste the token, which was generated in earlier step.
+- Wait for the command to complete the `bootstraping` process.
+- Check the logs to understand what is happening.
 
 <details><summary>Check Solution</summary>
 
@@ -37,11 +42,4 @@ flux bootstrap github \
 </details>
 
 <br>
-
-#### GitHub Personal Access Token - PAT
-- It will prompt for a `GitHub Personal Access Token - PAT`
-- Copy-Paste the token, which was generated in earlier step.
-- Wait for the command to complete the `bootstraping` process.
-- Check the logs to understand what is happening.
-
 Wait till you see this log message `✔ all components are healthy` and then click on `NEXT`.
