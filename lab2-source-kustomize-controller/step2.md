@@ -1,7 +1,11 @@
-#### Explore GitHub Repo
+#### Explore & Import GitHub Repo
 - A repo named `bb-app-source` is cloned and available on this machine
 - Explore it `cd bb-app-source`
-- Open this [repository](https://github.com/sid-demo/bb-app-source) in browser tab and **FORK** it.
+- Import this [repository](https://github.com/sid-demo/bb-app-source) to your GitHub Account
+  - Follow steps as per this [document](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer)
+    - Your old repository's clone URL: `https://github.com/sid-demo/bb-app-source`
+    - Repository name: `bb-app-source`
+    - Visibility: `Public`
 
 #### Explore `1-demo` branch 
 Change to `bb-app-source` repo directory and Checkout `1-demo` branch

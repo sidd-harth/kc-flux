@@ -8,8 +8,6 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
     - Type: `git`
     - Name: `2-demo-source-git-bb-app`
 
-Check the commit id in **Message** matching the earlier branch commit id. It means that flux pulled the latests manifests.
-
 <details><summary>Check Solution</summary>
 
 ```
@@ -27,8 +25,6 @@ flux get source git 2-demo-source-git-bb-app
     - Type: `kustomization`
     - Name: `2-demo-kustomize-git-bb-app`
 
-Check the commit id in **Message** matching the earlier branch commit id. It means that flux pulled the latests manifests.
-
 <details><summary>Check Solution</summary>
 
 ```
@@ -39,7 +35,7 @@ flux get kustomization 2-demo-kustomize-git-bb-app
 
 <br>
 
-##### Check Kubernetes Namespace
+#### Check Kubernetes Namespace
 A new namespace `2-demo` is created
 ```
 k get ns

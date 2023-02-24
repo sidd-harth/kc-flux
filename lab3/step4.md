@@ -29,6 +29,8 @@ flux create kustomization 2-demo-kustomize-git-bb-app \
 cat ~/block-buster/flux-clusters/dev-cluster/2-demo-kustomize-git-bb-app.yml
 ```{{exec}}
 
+<br>
+
 #### Add, Commit, Push the changes
 > When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
 
