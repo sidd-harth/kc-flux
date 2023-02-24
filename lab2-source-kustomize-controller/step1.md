@@ -21,8 +21,8 @@ flux bootstrap github \
 
 ### GitHub Personal Access Token - PAT
 - It will prompt for a `GitHub Personal Access Token - PAT`
-- Copy-Paste the token, which was generated in earlier step.
+- Copy-Paste the token, which was generated earlier.
 - Wait for the command to complete the `bootstraping` process.
 - Check the logs to understand what is happening.
 
-Wait till the `bootstrap` is successfully completed!!
+Wait till you see this log message `✔ all components are healthy` and then click on `NEXT`.
