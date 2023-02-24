@@ -19,42 +19,12 @@ When prompted for `password` use the `GitHub PAT - Personal Access Token` used i
 
 ```
 cd ~/block-buster
-```{{exec}}
-
-```
-git config --global user.email "demo@flux.com"
-```{{exec}}
-
-```
-git config --global user.name "FluxCD"
-```{{exec}}
-
-```
-git pull
-```{{exec}}
-
-```
 git add .
-```{{exec}}
-
-```
-git commit -m 1-demo
-```{{exec}}
-
-```
+git commit -m 'updated replicas to 3'
 git push
 ```{{exec}}
 
-### Check Commit ID `block-buster` repo
-```
-cd ~/block-buster
-```{{exec}}
-
-```
-git branch -v
-```{{exec}}
-
-### Manual Reconcilation of Source
+### Manual Reconcilation of Git Source
 
 ```
 flux reconcile source git flux-system
@@ -66,7 +36,7 @@ flux reconcile source git flux-system
 flux reconcile kustomization flux-system
 ```{{exec}}
 
-### Check deployment replicas
+### Check Deployment Replicas
 Earlier the app deployment had only 1 replica, now it should have 3 running pods.
 
 ```
