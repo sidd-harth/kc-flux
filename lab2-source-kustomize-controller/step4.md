@@ -37,6 +37,6 @@ k -n 1-demo get all
 
 ### Access the application on its NodePort
 
-Now access Block Buster App - version 7.1.0 using this link:
+Now access/play Block Buster App - version 7.1.0 using the below link:
 
-[Play Block Buster App - 7.1.0]({{TRAFFIC_HOST1_30001}})
+# [Play Block Buster App - 7.1.0]({{TRAFFIC_HOST1_30001}})
