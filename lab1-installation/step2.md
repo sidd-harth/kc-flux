@@ -1,7 +1,8 @@
-Install Flux CLI
+#### Install Flux CLI
 - You can follow the official [Flux CD documentation](https://fluxcd.io/flux/installation/#install-the-flux-cli)
+- If you are not sure, `click` on below `**Check Solution**`
 
-<details><summary>Solution</summary>
+<details><summary>Check Solution</summary>
 
 ```
 curl -s https://fluxcd.io/install.sh | sudo bash
@@ -11,7 +12,7 @@ curl -s https://fluxcd.io/install.sh | sudo bash
 
 <br>
   
-Check the **version** of Flux CLI
+#### Check the **version** of Flux CLI
 
 ```
 flux -v
@@ -19,7 +20,7 @@ flux -v
 
   
 
-Check **Flux CLI commands list** using the `-h` help tag
+#### Check **Flux CLI commands list** using the `-h` help tag
 
 ```
 flux -h
