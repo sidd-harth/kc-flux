@@ -1,4 +1,6 @@
-### Clone `block-butser` repo
+##### In this step we will clone a repo and add K8S manifests for application deployment
+
+##### Clone `block-butser` repo
 Copy the below command, replace the value field and run it,
 
 ```
@@ -10,20 +12,20 @@ cd ~
 git clone https://github.com/$GH_USERNAME/block-buster
 ```{{exec}}
 
-### Create a directory in `block-butser` repo
+##### Create a directory in `block-butser` repo
 ```
 mkdir ~/block-buster/flux-clusters/dev-cluster/1-demo
 ```{{exec}}
 
-### Copy manifests to `block-buster` repo
+##### Copy manifests to `block-buster` repo
 Copy all 3 manifests from `bb-app-source` repo `1-demo` branch to `1-demo` directory within `block-buster` repo
 
 ##### Copying deployment, namespace and service manifests
 ```
 cp ~/bb-app-source/manifests/deployment.yml ~/block-buster/flux-clusters/dev-cluster/1-demo
-
+echo "-----------------------------------------------------"
 cp ~/bb-app-source/manifests/namespace.yml ~/block-buster/flux-clusters/dev-cluster/1-demo
-
+echo "-----------------------------------------------------"
 cp ~/bb-app-source/manifests/service.yml ~/block-buster/flux-clusters/dev-cluster/1-demo
 ```{{exec}}
 
@@ -32,8 +34,8 @@ cp ~/bb-app-source/manifests/service.yml ~/block-buster/flux-clusters/dev-cluste
 ll ~/block-buster/flux-clusters/dev-cluster/1-demo
 ```{{exec}}
 
-### Add, Commit, Push the changes
-When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps
+##### Add, Commit, Push the changes
+When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
 
 ```
 cd ~/block-buster
@@ -44,3 +46,5 @@ git add .
 git commit -m 1-demo
 git push
 ```{{exec}}
+
+> Note the `commit id` displayed after the `git push` operation.

@@ -1,19 +1,17 @@
-### Explore GitHub Repo
+#### Explore GitHub Repo
 - A repo named `bb-app-source` is cloned and available on this machine
 - Explore it `cd bb-app-source`
 - Open this [repository](https://github.com/sid-demo/bb-app-source) in browser tab and **FORK** it.
 
-### Explore `1-demo` branch 
-Change to `bb-app-source` repo directory
+#### Explore `1-demo` branch 
+Change to `bb-app-source` repo directory and Checkout `1-demo` branch
 
 ```
 cd bb-app-source
-```{{exec}}
-
-Checkout `1-demo` branch
-
-```
+echo "-----------------------------------------------------"
 git checkout 1-demo
+echo "-----------------------------------------------------"
+ls -ltr manifests
 ```{{exec}}
 
 Check all 3 `K8S` manifests
@@ -24,17 +22,13 @@ ls -ltr manifests
 
 ```
 cat manifests/service.yml
-```{{exec}}
-
-```
+echo "-----------------------------------------------------"
 cat manifests/namespace.yml
-```{{exec}}
-
-```
+echo "-----------------------------------------------------"
 cat manifests/deployment.yml
 ```{{exec}}
 
-### Check `image` name and `tag` in deployment specification
+#### Check `image` name and `tag` in deployment specification
 ```yaml{6,23,25,26,27}
 apiVersion: apps/v1
 kind: Deployment
