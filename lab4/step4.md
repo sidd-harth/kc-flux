@@ -51,7 +51,7 @@ kubectl -n flux-system create secret generic minio-crds \
 --dry-run=client > ~/block-buster/flux-clusters/dev-cluster/flux-secrets/minio-crds.yml
 ```{{exec}}
 
-> As of now we are storing `PLAIN-TEXT` secrets in `GIT`. 
+> For the time being we will store `PLAIN-TEXT` secrets in `GIT`. 
 
 > In later Lab/Session we will `ENCRYPT` the secret using `SOPS`, `Sealed Secrets`
 

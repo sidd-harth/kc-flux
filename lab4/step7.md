@@ -5,7 +5,7 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 
 #### Check Flux Source Status
 - Run a `flux` cmd to `get` the `source` status using below spec:
-    - Type: `git`
+    - Type: `bucket`
     - Name: `4-demo-source-minio-s3-bucket-bb-app`
 
 <details><summary>Check Solution</summary>
