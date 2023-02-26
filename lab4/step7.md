@@ -6,14 +6,14 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 #### Check Flux Source Status
 - Run a `flux` cmd to `get` the `source` status using below spec:
     - Type: `git`
-    - Name: `2-demo-source-git-bb-app`
+    - Name: `4-demo-source-minio-s3-bucket-bb-app`
 
 <details><summary>Check Solution</summary>
 
 ```
 flux reconcile source git flux-system
 
-flux get source git 2-demo-source-git-bb-app
+flux get source git 4-demo-source-minio-s3-bucket-bb-app
 ```{{exec}}
 
 </details>
@@ -23,12 +23,12 @@ flux get source git 2-demo-source-git-bb-app
 #### Check Flux Kustomization Status
 - Run a `flux` cmd to `get` the `Kustomization` status using below spec:
     - Type: `kustomization`
-    - Name: `2-demo-kustomize-git-bb-app`
+    - Name: `4-demo-kustomize-minio-s3-bucket-bb-app`
 
 <details><summary>Check Solution</summary>
 
 ```
-flux get kustomization 2-demo-kustomize-git-bb-app
+flux get kustomization 4-demo-kustomize-minio-s3-bucket-bb-app
 ```{{exec}}
 
 </details>
@@ -36,17 +36,17 @@ flux get kustomization 2-demo-kustomize-git-bb-app
 <br>
 
 #### Check Kubernetes Namespace
-A new namespace `2-demo` is created
+A new namespace `4-demo` is created
 ```
 k get ns
 ```{{exec}}
 
 Check the status of deployment, pod, service are in `RUNNING` state
 ```
-k -n 2-demo get all
+k -n 4-demo get all
 ```{{exec}}
 
 #### Access the application on its NodePort
-Now `access/play` Block Buster App - `version 7.2.0` using the below link:
+Now `access/play` Block Buster App - `version 7.4.0` using the below link:
 
-# [Play Block Buster App - 7.2.0]({{TRAFFIC_HOST1_30002}})
+# [Play Block Buster App - 7.4.0]({{TRAFFIC_HOST1_30004}})

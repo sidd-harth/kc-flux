@@ -1,5 +1,5 @@
 #### Check Flux CLI Version
-Flux CLI is already installed for you, check it's version to confirm
+Flux CLI is already installed for you, check it's version to confirm,
 
 ```
 flux -v

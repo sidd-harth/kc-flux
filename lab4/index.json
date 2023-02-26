@@ -1,6 +1,6 @@
 {
-    "title": "Lab 3 - Source and Kustomize Controller Reconcile from External Repos",
-    "description": "Deloying manifests from external repo using Source and Kustomize Controller",
+    "title": "Lab 4 - Source and Kustomize Controller Reconcile from S3 Repo",
+    "description": "Deloying manifests from S3 repo using Source and Kustomize Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",
@@ -17,16 +17,24 @@
           "text": "step2.md"
         },
         {
-          "title": "Create a Flux Source",
+          "title": "Explore MinIO S3 Repo",
           "text": "step3.md"
         },
         {
-          "title": "Create a Flux Kustomization",
+          "title": "Create Minio K8S Secret",
           "text": "step4.md"
         },
         {
-          "title": "Check Flux Status and App",
+          "title": "Check Flux Source",
           "text": "step5.md"
+        },
+        {
+          "title": "Check Flux Kustomization",
+          "text": "step6.md"
+        },
+        {
+          "title": "Check Flux Status and Application",
+          "text": "step7.md"
         }
       ],
       "finish": {

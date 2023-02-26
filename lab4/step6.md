@@ -1,23 +1,22 @@
 #### Create a `flux kustomization` to apply the manifets
 - Generate a `flux kustomization` with the following spec:
-    - Name: `2-demo-kustomize-git-bb-app`
-    - Source: `GitRepository/2-demo-source-git-bb-app`
-    - Target Namespace: `2-demo`
+    - Name: `4-demo-kustomize-minio-s3-bucket-bb-app`
+    - Source: `Bucket/4-demo-source-minio-s3-bucket-bb-app`
+    - Target Namespace: `4-demo`
     - Timeout: `10s`
     - Path: `manifests`
     - Prune: `true`
-    - Export Path: `~/block-buster/flux-clusters/dev-cluster/2-demo-kustomize-git-bb-app.yml`
+    - Export Path: `~/block-buster/flux-clusters/dev-cluster/4-demo-kustomize-minio-s3-bucket-bb-app.yml`
 
 <details><summary>Check Solution</summary>
 
 ```
-flux create kustomization 2-demo-kustomize-git-bb-app \
---source GitRepository/2-demo-source-git-bb-app \
---prune true \
---interval 10s \
---target-namespace 2-demo \
---path manifests  \
---export > ~/block-buster/flux-clusters/dev-cluster/2-demo-kustomize-git-bb-app.yml
+  flux create kustomization 4-demo-kustomize-minio-s3-bucket-bb-app \
+  --source Bucket/4-demo-source-minio-s3-bucket-bb-app \
+  --target-namespace 4-demo \
+  --path ./manifests \
+  --prune true \
+  --export > ~/block-buster/flux-clusters/dev-cluster/4-demo-kustomize-minio-s3-bucket-bb-app.yml
 ```{{exec}}
 
 </details>
@@ -26,7 +25,7 @@ flux create kustomization 2-demo-kustomize-git-bb-app \
 
 #### Check the Generated YAML
 ```
-cat ~/block-buster/flux-clusters/dev-cluster/2-demo-kustomize-git-bb-app.yml
+cat ~/block-buster/flux-clusters/dev-cluster/4-demo-kustomize-minio-s3-bucket-bb-app.yml
 ```{{exec}}
 
 <br>
@@ -40,7 +39,7 @@ git config --global user.email "fluxcd@killercoda.com"
 git config --global user.name "FluxCD-Killercoda"
 git pull
 git add .
-git commit -m 2-demo
+git commit -m 4-demo
 git push
 ```{{exec}}
 
