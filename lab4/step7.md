@@ -13,7 +13,7 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 ```
 flux reconcile source git flux-system
 
-flux get source git 4-demo-source-minio-s3-bucket-bb-app
+flux get source bucket 4-demo-source-minio-s3-bucket-bb-app
 ```{{exec}}
 
 </details>

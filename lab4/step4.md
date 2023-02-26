@@ -21,6 +21,7 @@ We will use `flux` to connect to `Minio` and fetch the manifests.
 - Create a K8S Secret with the following spec:
     - Secret Name: `minio-crds`
     - Secret Type: `generic`
+    - Namespace: `flux-system`
     - Secret Literals:
         - `accesskey`: `minioadmin`
         - `secretkey`: `minioadmin`
@@ -30,7 +31,7 @@ We will use `flux` to connect to `Minio` and fetch the manifests.
 ```
 kubectl -n flux-system create secret generic minio-crds \
 --from-literal=accesskey=minioadmin \
---from-literal=secretkey=minioadmin
+--from-literal=secretkey=minioadmin 
 ```{{exec}}
 
 </details>
@@ -46,7 +47,8 @@ mkdir ~/block-buster/flux-clusters/dev-cluster/flux-secrets
 
 kubectl -n flux-system create secret generic minio-crds \
 --from-literal=accesskey=minioadmin \
---from-literal=secretkey=minioadmin > ~/block-buster/flux-clusters/dev-cluster/flux-secrets/minio-crds.yml
+--from-literal=secretkey=minioadmin -o yaml \
+--dry-run=client > ~/block-buster/flux-clusters/dev-cluster/flux-secrets/minio-crds.yml
 ```{{exec}}
 
 > As of now we are storing `PLAIN-TEXT` secrets in `GIT`. 

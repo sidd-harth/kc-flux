@@ -27,11 +27,11 @@
           "text": "step4.md"
         },
         {
-          "title": "Check Flux Source",
+          "title": "Create Flux Source",
           "text": "step5.md"
         },
         {
-          "title": "Check Flux Kustomization",
+          "title": "Create Flux Kustomization",
           "text": "step6.md"
         },
         {

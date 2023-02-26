@@ -8,7 +8,7 @@ A `MinIO S3 Repo` is already install on this cluster.
 
 #### Access MinIO Server
 - Access Minio using below `URL` and `credentials`
-    - Webconsole: [MinIO]({{TRAFFIC_HOST1_30040}})
+    - UI: [MinIO WebConsole]({{TRAFFIC_HOST1_30040}})
     - Username: `minioadmin`
     - Password: `minioadmin`
 

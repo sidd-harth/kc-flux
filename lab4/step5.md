@@ -16,7 +16,7 @@ flux create source bucket 4-demo-source-minio-s3-bucket-bb-app \
   --endpoint minio.minio-dev.svc.cluster.local:9000  \
   --provider generic \
   --insecure \
-  --export > ~/block-buster/flux-clusters/dev-cluster/2-demo-source-git-bb-app.yml
+  --export > ~/block-buster/flux-clusters/dev-cluster/4-demo-source-minio-s3-bucket-bb-app.yml
 ```{{exec}}
 
 </details>
@@ -25,6 +25,6 @@ flux create source bucket 4-demo-source-minio-s3-bucket-bb-app \
 
 #### Check the Generated YAML
 ```
-cat ~/block-buster/flux-clusters/dev-cluster/2-demo-source-git-bb-app.yml
+cat ~/block-buster/flux-clusters/dev-cluster/4-demo-source-minio-s3-bucket-bb-app.yml
 ```{{exec}}
 
