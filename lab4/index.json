@@ -17,6 +17,8 @@
           "text": "step2.md"
         },
         {
+          "foreground": "foreground-3.sh",
+          "background": "background-3.sh",
           "title": "Explore MinIO S3 Repo",
           "text": "step3.md"
         },

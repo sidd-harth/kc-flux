@@ -8,7 +8,7 @@ A `MinIO S3 Repo` is already install on this cluster.
 
 #### Access MinIO Server
 - Access Minio using below `URL` and `credentials`
-    - Webconsole: `[MinIO]({{TRAFFIC_HOST1_30040}})`
+    - Webconsole: [MinIO]({{TRAFFIC_HOST1_30040}})
     - Username: `minioadmin`
     - Password: `minioadmin`
 
@@ -23,6 +23,6 @@ A `MinIO S3 Repo` is already install on this cluster.
 #### Upload `Manifests` to `Bucket`
 - Follow below steps:
     - Click `Object Browser` (on the LEFT SIDE PANEL)
-        - Click `Create a Bucket`
-            - Click Bucket Named: `bucket-bb-app`
-                - Click `Upload Folder` and add `manifests` directory from `4-demo` branch
+        - Click Bucket Named: `bucket-bb-app`
+            - Click `Upload Folder`
+                - Add `manifests` directory from `4-demo` branch
