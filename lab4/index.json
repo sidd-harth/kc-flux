@@ -1,0 +1,40 @@
+{
+    "title": "Lab 3 - Source and Kustomize Controller Reconcile from External Repos",
+    "description": "Deloying manifests from external repo using Source and Kustomize Controller",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Install Flux Server",
+          "text": "step1.md"
+        },
+        {
+          "title": "Explore GitHub Repo",
+          "text": "step2.md"
+        },
+        {
+          "title": "Create a Flux Source",
+          "text": "step3.md"
+        },
+        {
+          "title": "Create a Flux Kustomization",
+          "text": "step4.md"
+        },
+        {
+          "title": "Check Flux Status and App",
+          "text": "step5.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  
