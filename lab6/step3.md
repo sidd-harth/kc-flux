@@ -16,7 +16,12 @@ helm package ~/bb-app-source/7.7.1/helm-chart/
 
 </details>
 
-> Check that a new `block-buster-helm-app-7.7.1.tgz` file is created in `~/bb-app-source/7.7.1/helm-chart/` directory
+<br>
+
+#### Check that a new `block-buster-helm-app-7.7.1.tgz` file is created
+```
+ll ~/bb-app-source/
+```{{exec}}
 
 <br>
 
@@ -29,8 +34,6 @@ helm package ~/bb-app-source/7.7.1/helm-chart/
 <details><summary>Check Solution</summary>
 
 ```
-export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
-
 helm registry login ghcr.io --username $GH_USERNAME
 ```{{exec}}
 
@@ -40,14 +43,14 @@ helm registry login ghcr.io --username $GH_USERNAME
 
 #### Push to OCI Repo
 - Push to OCI Repo following below spec:
-    - Artifact: `~/bb-app-source/7.7.1/helm-chart/block-buster-helm-app-7.7.1.tgz`
+    - Artifact: `~/bb-app-source/block-buster-helm-app-7.7.1.tgz`
     - Repo: `oci://ghcr.io/$GH_USERNAME/bb-app`
 
 
 <details><summary>Check Solution</summary>
 
 ```
-helm push ~/bb-app-source/7.7.1/helm-chart/block-buster-helm-app-7.7.1.tgz oci://ghcr.io/$GH_USERNAME/bb-app
+helm push ~/bb-app-source/block-buster-helm-app-7.7.1.tgz oci://ghcr.io/$GH_USERNAME/bb-app
 ```{{exec}}
 
 </details>

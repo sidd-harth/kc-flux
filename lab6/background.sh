@@ -4,6 +4,11 @@ echo PS1='"\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m
 
 source ~/.bashrc
 
+rm /usr/bin/helm
+curl https://get.helm.sh/helm-v3.10.3-linux-amd64.tar.gz
+tar -zxvf helm-v3.10.3-linux-amd64.tar.gz
+mv linux-amd64/helm /usr/bin/helm
+
 mkdir -p ~/flux-training/helm
 touch ~/flux-training/helm/values.yml
 

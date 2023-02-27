@@ -1,5 +1,5 @@
 {
-    "title": "Lab 5 - Deploy Helm Charts from a OCI Repository",
+    "title": "Lab 6 - Deploy Helm Charts from a OCI Repository",
     "description": "Deloying Helm Charts from OCI repo using Flux Helm Controller",
     "details": {
       "intro": {
