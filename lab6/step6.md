@@ -1,4 +1,4 @@
-> Create a `flux helmrelease` to apply the manifets
+#### Create a `flux helmrelease` to apply the manifets
 - Generate a `flux helmrelease` with the following spec:
     - Name: `7-demo-helm-release-oci-bb-app-7-7-1`
     - Source: `HelmRepository/7-demo-source-oci-helm-bb-app-7-7-`
@@ -12,7 +12,7 @@
 <details><summary>Check Solution</summary>
 
 ```
-flux create helmrelease 27-demo-helm-release-oci-bb-app-7-7-1 \
+flux create helmrelease 7-demo-helm-release-oci-bb-app-7-7-1 \
 --source HelmRepository/7-demo-source-oci-helm-bb-app-7-7-1 \
 --target-namespace 7-demo \
 --chart block-buster-helm-app  \
@@ -26,14 +26,14 @@ flux create helmrelease 27-demo-helm-release-oci-bb-app-7-7-1 \
 
 <br>
 
-> Check the Generated YAML
+#### Check the Generated YAML
 ```
 cat ~/block-buster/flux-clusters/dev-cluster/7-demo-helm-release-oci-bb-app-7-7-1.yml
 ```{{exec}}
 
 <br>
 
-> Add, Commit, Push the changes
+#### Add, Commit, Push the changes
 > When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
 
 ```

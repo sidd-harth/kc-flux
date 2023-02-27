@@ -1,9 +1,9 @@
-> Flux Connecting to GHCR OCI Repo
+#### Flux Connecting to GHCR OCI Repo
 We will use `flux` to connect to `GHCR OCI Repo` and fetch the manifests or Helm charts.
 
 `flux` needs to authenticate aganist `GHCR OCI Repo` and hence we will create a `Flux K8S Secret` and use it as an refernece within `flux`.
 
-> Flux OCI Secret
+#### Flux OCI Secret
 - Create a Flux OCI Secret with the following spec:
     - Secret Name: `ghcr-auth`
     - Secret Type: `oci`
@@ -24,7 +24,7 @@ flux create secret oci ghcr-auth \
 
 <br>
 
-> Clone `block-butser` repo
+#### Clone `block-butser` repo
 Copy the below command, replace the value field and run it,
 
 ```
@@ -38,7 +38,7 @@ git clone https://github.com/$GH_USERNAME/block-buster
 
 <br>
 
-> Commit Plain-text Secret to Git
+#### Commit Plain-text Secret to Git
 
 <details><summary>Save Secret to Block Buster Repo</summary>
 

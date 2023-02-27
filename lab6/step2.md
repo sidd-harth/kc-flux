@@ -1,11 +1,11 @@
-> Explore GitHub Repo
+#### Explore GitHub Repo
 - A repo named `bb-app-source` is cloned and available on this machine
 - Explore it `cd bb-app-source`
 - Open this [repository](https://github.com/sid-demo/bb-app-source) in browser tab and check branch **7-demo**
 
 <br>
 
-> Explore `7-demo` branch 
+#### Explore `7-demo` branch 
 Change to `bb-app-source` repo directory and Checkout `7-demo` branch
 
 ```
