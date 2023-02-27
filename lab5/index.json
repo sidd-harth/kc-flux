@@ -1,6 +1,6 @@
 {
-    "title": "Lab 5 - Deploy App from a Helm Repository",
-    "description": "Deloying manifests from Helm repo using Helm Controller",
+    "title": "Lab 5 - Deploy Helm Charts from a Helm Repository",
+    "description": "Deloying Helm Charts from Helm repo using Flux Helm Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",
