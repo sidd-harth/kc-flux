@@ -1,6 +1,6 @@
 {
     "title": "Lab 5 - Deploy App from a Helm Repository",
-    "description": "Deloying manifests from HELM repo using Helm Controller",
+    "description": "Deloying manifests from Helm repo using Helm Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",
@@ -13,15 +13,15 @@
           "text": "step1.md"
         },
         {
-          "title": "Explore HELM Repo",
+          "title": "Explore Helm Repo",
           "text": "step2.md"
         },
         {
-          "title": "Create Flux HELM Source",
+          "title": "Create Flux Helm Source",
           "text": "step3.md"
         },
         {
-          "title": "Create Flux HELM Release",
+          "title": "Create Flux Helm Release",
           "text": "step4.md"
         },
         {

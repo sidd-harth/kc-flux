@@ -2,8 +2,8 @@
 - A repo named `block-buster-helm-app` is available in `ArtifactHub`
     - URL: [block-buster-helm-app](https://artifacthub.io/packages/helm/block-buster-app/block-buster-helm-app)
     - Check:
-        - `Install instructions`
-        - `Template`
+        - `Install` instructions
+        - `Templates`
         - `Default Values`
 <br>
 
@@ -16,7 +16,7 @@ cat ~/flux-training/helm/values.yml
 
 <br>
 
-Check `image tag - 7.6.0` within `values.yml`
+Check `app version - 7.6.0` within `values.yml`
 
 ```
 cat ~/flux-training/helm/values.yml | grep -i 7.6.0

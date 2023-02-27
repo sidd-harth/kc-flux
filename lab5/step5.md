@@ -50,3 +50,7 @@ k -n 6-demo get all
 Now `access/play` Block Buster App - `version 7.6.0` using the below link:
 
 # [Play Block Buster App - 7.6.0]({{TRAFFIC_HOST1_30006}})
+
+> From v7.6.0, the game has two `Levels`
+
+> Complete `Level 1` to play/start `Level 2`
