@@ -16,8 +16,8 @@ We will use `flux` to connect to `GHCR OCI Repo` and fetch the manifests or Helm
 ```
 flux create secret oci ghcr-auth \
 --url ghcr.io \
---username <<<your-github-username>>> \
---password <<<your-github-pesonal-access-token-pat>>>
+--username your-github-username \
+--password your-github-pesonal-access-token-pat
 ```{{copy}}
 
 </details>
@@ -43,8 +43,7 @@ git clone https://github.com/$GH_USERNAME/block-buster
 <details><summary>Save Secret to Block Buster Repo</summary>
 
 ```
-kubectl -n flux-system get secret generic ghcr-auth -o yaml \
---dry-run=client > ~/block-buster/flux-clusters/dev-cluster/flux-secrets/ghcr-auth.yml
+kubectl -n flux-system get secret ghcr-auth -o yaml > ~/block-buster/flux-clusters/dev-cluster/flux-secrets/ghcr-auth.yml
 ```{{exec}}
 
 > For the time being we will store `PLAIN-TEXT` secrets in `GIT`. 

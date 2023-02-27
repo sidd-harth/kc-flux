@@ -13,7 +13,7 @@ cd bb-app-source
 
 git checkout 7-demo
 
-tree 7.7.1/
+tree 7.7.1/helm-chart
 ```{{exec}}
 
 <br>

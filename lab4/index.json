@@ -1,6 +1,6 @@
 {
     "title": "Lab 4 - Deploy App from a S3 Repo",
-    "description": "Deloying manifests from S3 repo using Source and Kustomize Controller",
+    "description": "Deploying manifests from S3 repo using Source and Kustomize Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",

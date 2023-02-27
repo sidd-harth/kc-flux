@@ -4,7 +4,7 @@
 
 <br>
 
-#### Package Helm Chart
+> Package Helm Chart
 - Helm CLI is already installed, follow below spec to create a Helm package:
     - Path: `~/bb-app-source/7.7.1/helm-chart/`
 
@@ -18,14 +18,14 @@ helm package ~/bb-app-source/7.7.1/helm-chart/
 
 <br>
 
-#### Check that a new `block-buster-helm-app-7.7.1.tgz` file is created
+> Check that a new `block-buster-helm-app-7.7.1.tgz` file is created
 ```
 ll ~/bb-app-source/
 ```{{exec}}
 
 <br>
 
-#### Login to OCI Repo
+> Login to OCI Repo
 - Login to `GHCR OCI Repo` using Helm CLI
     - Domain: `ghcr.io`
     - Username: `Replace-with-your-Github-Username`
@@ -41,7 +41,7 @@ helm registry login ghcr.io --username $GH_USERNAME
 
 <br>
 
-#### Push to OCI Repo
+> Push to OCI Repo
 - Push to OCI Repo following below spec:
     - Artifact: `~/bb-app-source/block-buster-helm-app-7.7.1.tgz`
     - Repo: `oci://ghcr.io/$GH_USERNAME/bb-app`
@@ -55,4 +55,8 @@ helm push ~/bb-app-source/block-buster-helm-app-7.7.1.tgz oci://ghcr.io/$GH_USER
 
 </details>
 
-> Go to GitHub Package and checkout the new package - https://github.com/$GH_USERNAME?tab=packages
+<br>
+
+#### Go to GitHub Package and checkout the new package - https://github.com/$GH_USERNAME?tab=packages
+
+> Replace $GH_USERNAME with your GitHub Username

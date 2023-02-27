@@ -1,6 +1,6 @@
 {
     "title": "Lab 2 - Deploy App from Flux Repo",
-    "description": "Deloying manifests from Flux repo using Source and Kustomize Controller",
+    "description": "Deploying manifests from Flux repo using Source and Kustomize Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",

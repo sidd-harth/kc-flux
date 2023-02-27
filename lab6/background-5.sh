@@ -1,7 +1,7 @@
 #!/bin/bash
 
 flux create source git infra-source-git \
---url https://github.com/$GH_USERNAME/bb-app-source \
+--url https://github.com/sidd-harth/bb-app-source \
 --branch infrastructure \
 --timeout 10s
 

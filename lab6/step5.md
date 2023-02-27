@@ -1,3 +1,5 @@
+> Please wait for 60 seconds. Setting up Step Pre-requisites
+
 #### Create a `flux source` to pull `Helm Chart` from `OCI Repository`
 - Generate a `flux source` with the following spec:
     - URL: `oci://ghcr.io/sid-demo/bb-app`
