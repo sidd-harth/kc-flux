@@ -1,6 +1,6 @@
 {
-    "title": "Lab 2 - Deploy App from Flux Repo",
-    "description": "Deloying manifests from Flux repo using Source and Kustomize Controller",
+    "title": "Lab 5 - Deploy App from a Helm Repository",
+    "description": "Deloying manifests from HELM repo using Helm Controller",
     "details": {
       "intro": {
         "foreground": "foreground.sh",
@@ -13,19 +13,19 @@
           "text": "step1.md"
         },
         {
-          "title": "Explore GitHub Repo",
+          "title": "Explore HELM Repo",
           "text": "step2.md"
         },
         {
-          "title": "Commit Manifest Files",
+          "title": "Create Flux HELM Source",
           "text": "step3.md"
         },
         {
-          "title": "Access the Application",
+          "title": "Create Flux HELM Release",
           "text": "step4.md"
         },
         {
-          "title": "Manual Reconcilation",
+          "title": "Check Flux Status and Application",
           "text": "step5.md"
         }
       ],
@@ -34,7 +34,7 @@
       }
     },
     "backend": {
-      "imageid": "kubernetes-kubeadm-1node"
+      "imageid": "kubernetes-kubeadm-2nodes"
     }
   }
   

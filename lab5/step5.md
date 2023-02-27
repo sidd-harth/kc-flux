@@ -5,30 +5,30 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 
 #### Check Flux Source Status
 - Run a `flux` cmd to `get` the `source` status using below spec:
-    - Type: `bucket`
-    - Name: `4-demo-source-minio-s3-bucket-bb-app`
+    - Type: `helm`
+    - Name: `6-demo-source-helm-bb-appp`
 
 <details><summary>Check Solution</summary>
 
 ```
 flux reconcile source git flux-system
 
-flux get source bucket 4-demo-source-minio-s3-bucket-bb-app
+flux get source helm 6-demo-source-helm-bb-app
 ```{{exec}}
 
 </details>
 
 <br>
 
-#### Check Flux Kustomization Status
-- Run a `flux` cmd to `get` the `Kustomization` status using below spec:
-    - Type: `kustomization`
-    - Name: `4-demo-kustomize-minio-s3-bucket-bb-app`
+#### Check Flux HelmRelease Status
+- Run a `flux` cmd to `get` the `HelmRelease` status using below spec:
+    - Type: `helmrelease`
+    - Name: `6-demo-helm-release-bb-app`
 
 <details><summary>Check Solution</summary>
 
 ```
-flux get kustomization 4-demo-kustomize-minio-s3-bucket-bb-app
+flux get helmrelease 6-demo-helm-release-bb-app
 ```{{exec}}
 
 </details>
@@ -36,17 +36,17 @@ flux get kustomization 4-demo-kustomize-minio-s3-bucket-bb-app
 <br>
 
 #### Check Kubernetes Namespace
-A new namespace `4-demo` is created
+A new namespace `6-demo` is created
 ```
 k get ns
 ```{{exec}}
 
 Check the status of deployment, pod, service are in `RUNNING` state
 ```
-k -n 4-demo get all
+k -n 6-demo get all
 ```{{exec}}
 
 #### Access the application on its NodePort
-Now `access/play` Block Buster App - `version 7.4.0` using the below link:
+Now `access/play` Block Buster App - `version 7.6.0` using the below link:
 
-# [Play Block Buster App - 7.4.0]({{TRAFFIC_HOST1_30004}})
+# [Play Block Buster App - 7.6.0]({{TRAFFIC_HOST1_30006}})

@@ -1,4 +1,4 @@
-#### Check Flux Source Status
+#### Check Flux Status
 As soon as the manifests are pushed to the repository, Flux will pull manifests and reconcile the cluster to deploy all the manifests.
 
 <br>
