@@ -57,6 +57,6 @@ helm push ~/bb-app-source/block-buster-helm-app-7.7.1.tgz oci://ghcr.io/$GH_USER
 
 <br>
 
-#### Go to GitHub Package and checkout the new package - https://github.com/$GH_USERNAME?tab=packages
+> Go to GitHub Package and checkout the new package - https://github.com/$GH_USERNAME?tab=packages
 
 > Replace $GH_USERNAME with your GitHub Username
