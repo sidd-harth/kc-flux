@@ -31,8 +31,7 @@
           "text": "step5.md"
         },
         {
-          "foreground": "foreground-6.sh",
-          "background": "background-6.sh",
+
           "title": "Create Flux Helm Release",
           "text": "step6.md"
         },
