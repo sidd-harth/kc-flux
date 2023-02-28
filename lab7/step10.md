@@ -47,7 +47,7 @@ flux get images repository 8-demo-image-repo-bb-app
 
 <br>
 
-## Check the Message of Previous command, it should mention
-## `successful scan, found **2** tag`
+### Check the Message of Previous command, it should mention
+### `successful scan, found 2 tag`
 
 > In next lab we will create an `Flux Image Policy` to get the `latest` image tag

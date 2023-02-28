@@ -1,4 +1,4 @@
-#### Clone `block-butser` repo
+#### Clone `bb-app-source` repo
 Copy the below command, replace the value field and run it,
 
 ```
