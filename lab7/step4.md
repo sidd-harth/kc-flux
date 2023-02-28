@@ -10,12 +10,12 @@
     - Password: `your-docker-hub-password`
 
 ```
-export DOCKER_USERNAME=`your-docker-hub-username`
-```
+export DOCKER_USERNAME=your-docker-hub-username>
+```{{exec}}
 
 ```
 docker login --username $DOCKER_USERNAME
-```
+```{{exec}}
 
 > It will prompt for `password`, enter your DockerHub Password
 

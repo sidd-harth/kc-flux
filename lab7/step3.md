@@ -1,7 +1,14 @@
-#### Explore GitHub Repo
-- A repo named `bb-app-sourc` is cloned and available on this machine
-- Explore it `cd bb-app-source`
-- Open this [repository](https://github.com/sid-demo/bb-app-source) in browser tab and check branch **7-demo**
+#### Clone `block-butser` repo
+Copy the below command, replace the value field and run it,
+
+```
+export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
+```{{copy}}
+
+```
+cd ~
+git clone https://github.com/$GH_USERNAME/bb-app-source
+```{{exec}}
 
 <br>
 
@@ -21,5 +28,5 @@ tree manifests/
 Check `image: siddharth67/block-buster-dev:7.8.0` within `deployment.yml`
 
 ```
-cat ~/block-buster/manifests/deployment.yml | grep -i "siddharth67/block-buster-dev:7.8.0"
+cat ~/bb-app-source/manifests/deployment.yml | grep -i "siddharth67/block-buster-dev:7.8.0"
 ```{{exec}}

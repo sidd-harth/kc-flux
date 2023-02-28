@@ -16,10 +16,6 @@ git clone https://github.com/$GH_USERNAME/block-buster
 - We will using Git Source and Kustomization `flux controllers`
 - Since we have already done these steps multiple times in earlier labs, please execute the below commands directly.
 
-```
-export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
-```{{copy}}
-
 <details><summary>Flux Source</summary>
 
 ```
@@ -27,8 +23,8 @@ flux create source git 8-demo-source-git-bb-app \
 --url https://github.com/$GH_USERNAME/bb-app-source \
 --branch 8-demo \
 --timeout 10s \
---export >  8-demo-source-git-bb-app.yml 
-```{{copy}}
+--export >  ~/block-buster/flux-clusters/dev-cluster/8-demo-source-git-bb-app.yml 
+```{{exec}}
 
 </details>
 
@@ -43,14 +39,14 @@ flux create kustomization 8-demo-kustomize-git-bb-app \
 --interval 100s \
 --target-namespace 8-demo \
 --path manifests  \
---export > 8-demo-kustomize-git-bb-app.yml
-```{{copy}}
+--export > ~/block-buster/flux-clusters/dev-cluster/8-demo-kustomize-git-bb-app.yml
+```{{exec}}
 
 </details>
 
 <br>
 
-#### Add, Commit, Push the changes
+#### Add, Commit, Push the changes to `block-buster` repo
 > When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
 
 ```

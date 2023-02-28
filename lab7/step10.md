@@ -36,11 +36,11 @@ docker push $DOCKER_USERNAME/bb-app-flux-demo-killercoda:7.8.1
 <details><summary>Check Solution</summary>
 
 ```
-flux reconcile image repo 8-demo-image-repo-bb-app
+flux reconcile image repository 8-demo-image-repo-bb-app
 ```{{exec}}
 
 ```
-flux get image repo 8-demo-image-repo-bb-app
+flux get images repository 8-demo-image-repo-bb-app
 ```{{exec}}
 
 </details>
