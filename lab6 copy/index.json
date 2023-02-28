@@ -1,0 +1,60 @@
+{
+    "title": "Lab 7 - Flux Image Controller - Repository",
+    "description": "We will work on Flux Image Controller - Repository",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Flux Install with Image Automation Controllers",
+          "text": "step1.md"
+        },
+        {
+          "title": "Explore New Flux Components",
+          "text": "step2.md"
+        },
+        {
+          "title": "Explore bb-app-source Repo",
+          "text": "step3.md"
+        },
+        {
+          "title": "Docker Login - Pull - Tag - Push",
+          "text": "step4.md"
+        },
+        {
+          "title": "Update Image Name in bb-app-source Repo",
+          "text": "step5.md"
+        },
+        {
+          "title": "Create Flux Source & Kustomization",
+          "text": "step6.md"
+        },
+        {
+          "title": "Check Flux Status and Application",
+          "text": "step7.md"
+        },
+        {
+          "title": "Create Flux Image Repository",
+          "text": "step8.md"
+        },
+        {
+          "title": "Check Flux Image Repo Status",
+          "text": "step9.md"
+        },
+        {
+          "title": "Update Source Code, Docker Build & Flux Reconcile",
+          "text": "step10.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  

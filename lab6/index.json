@@ -1,6 +1,6 @@
 {
-    "title": "Lab 6 - Deploy Helm Charts from a OCI Repository",
-    "description": "Deploying Helm Charts from OCI repo using Flux Helm Controller",
+    "title": "Lab 6 - Push & Deploy Helm Charts from a OCI Repository",
+    "description": "Push & Deploy Helm Charts from OCI repo using Flux",
     "details": {
       "intro": {
         "foreground": "foreground.sh",

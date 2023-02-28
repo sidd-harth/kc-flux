@@ -17,7 +17,7 @@ We will use `flux` to connect to `GHCR OCI Repo` and fetch the manifests or Helm
 flux create secret oci ghcr-auth \
 --url ghcr.io \
 --username $GH_USERNAME \
---password your-github-pesonal-access-token-pat
+--password your-github-pesonal-access-token-pat>>>>>>>>
 ```{{copy}}
 
 </details>
