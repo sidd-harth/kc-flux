@@ -1,5 +1,19 @@
 > Please wait for 60 seconds. Setting up Step Pre-requisites
 
+#### Clone `block-butser` repo
+Copy the below command, replace the value field and run it,
+
+```
+export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
+```{{copy}}
+
+```
+cd ~
+git clone https://github.com/$GH_USERNAME/block-buster
+```{{exec}}
+
+<br>
+
 #### Create a `flux source` to pull `Helm Chart` from `OCI Repository`
 - Generate a `flux source` with the following spec:
     - URL: `oci://ghcr.io/<<your-GITHUB-USERNAME>>/bb-app`
