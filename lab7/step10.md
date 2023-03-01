@@ -16,7 +16,7 @@ sed -i "s/7.8.0/7.8.1 (minor color changes)/g" ~/bb-app-source/src/index.php
 
 <br>
 
-#### Docker Build & Push New Changes
+#### Docker Build & Push New Changes with VERSION `7.8.1`
 
 ```
 cd ~/bb-app-source/src
@@ -47,7 +47,6 @@ flux get images repository 8-demo-image-repo-bb-app
 
 <br>
 
-### Check the Message of Previous command, it should mention
-### `successful scan, found 2 tag`
+### Check the Message of Previous command, it should mention: `successful scan: found 2 tag`
 
 > In next lab we will create an `Flux Image Policy` to get the `latest` image tag

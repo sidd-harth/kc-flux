@@ -5,6 +5,7 @@ Check existing `image name` within `deployment.yml`
 cat ~/bb-app-source/manifests/deployment.yml | grep -i "7.8.0"
 ```{{exec}}
 
+<br>
 
 In this step we will `update` the image withn  `bb-app-source` repo `manifests/deployment.yml` using `sed`
 
@@ -12,7 +13,7 @@ In this step we will `update` the image withn  `bb-app-source` repo `manifests/d
 sed -i "s#siddharth67/block-buster-dev:7.8.0#${DOCKER_USERNAME}/bb-app-flux-demo-killercoda:7.8.0#g" ~/bb-app-source/manifests/deployment.yml
 ```{{exec}}
 
-<br>
+
 
 Check Updated `image name` within `deployment.yml`
 

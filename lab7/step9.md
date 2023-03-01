@@ -20,4 +20,4 @@ flux get images repository 8-demo-image-repo-bb-app
 
 > Check the Message of Previous command, it should mention,
 
-> `successful scan, found 1 tag`
+> `successful scan: found 1 tag`
