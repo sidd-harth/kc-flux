@@ -1,5 +1,5 @@
 {
-    "title": "Lab 6 - Push & Deploy Helm Charts from a OCI Repository",
+    "title": "Lab 6 - Helm Charts from a OCI Repository",
     "description": "Push & Deploy Helm Charts from OCI repo using Flux",
     "details": {
       "intro": {

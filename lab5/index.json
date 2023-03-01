@@ -1,5 +1,5 @@
 {
-    "title": "Lab 5 - Deploy Helm Charts from a Helm Repository",
+    "title": "Lab 5 - Helm Charts from a Helm Repository",
     "description": "Deploying Helm Charts from Helm repo using Flux Helm Controller",
     "details": {
       "intro": {

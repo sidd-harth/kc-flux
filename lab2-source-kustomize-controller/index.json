@@ -1,5 +1,5 @@
 {
-    "title": "Lab 2 - Deploy App from Flux Repo",
+    "title": "Lab 2 - Deploy App - Flux Repo",
     "description": "Deploying manifests from Flux repo using Source and Kustomize Controller",
     "details": {
       "intro": {
