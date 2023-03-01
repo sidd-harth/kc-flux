@@ -9,23 +9,23 @@
       },
       "steps": [
         {
-          "title": "Install Flux Server",
+          "title": "1. Install Flux Server",
           "text": "step1.md"
         },
         {
-          "title": "Explore Helm Repo",
+          "title": "2. Explore Helm Repo",
           "text": "step2.md"
         },
         {
-          "title": "Create Flux Helm Source",
+          "title": "3. Create Flux Helm Source",
           "text": "step3.md"
         },
         {
-          "title": "Create Flux Helm Release",
+          "title": "4. Create Flux Helm Release",
           "text": "step4.md"
         },
         {
-          "title": "Check Flux Status and Application",
+          "title": "5. Check Flux Status and Application",
           "text": "step5.md"
         }
       ],

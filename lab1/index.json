@@ -9,19 +9,19 @@
       },
       "steps": [
         {
-          "title": "Generate GitHub PAT",
+          "title": "1. Generate GitHub PAT",
           "text": "step1.md"
         },
         {
-          "title": "Install Flux CLI",
+          "title": "2. Install Flux CLI",
           "text": "step2.md"
         },
         {
-          "title": "Install Flux Server",
+          "title": "3. Install Flux Server",
           "text": "step3.md"
         },
         {
-          "title": "Explore GitHub and K8S Cluster",
+          "title": "4. Explore GitHub and K8S Cluster",
           "text": "step4.md"
         }
       ],

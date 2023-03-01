@@ -9,23 +9,23 @@
       },
       "steps": [
         {
-          "title": "Install Flux Server",
+          "title": "1. Install Flux Server",
           "text": "step1.md"
         },
         {
-          "title": "Explore GitHub Repo",
+          "title": "2. Explore GitHub Repo",
           "text": "step2.md"
         },
         {
-          "title": "Commit Manifest Files",
+          "title": "3. Commit Manifest Files",
           "text": "step3.md"
         },
         {
-          "title": "Access the Application",
+          "title": "4. Access the Application",
           "text": "step4.md"
         },
         {
-          "title": "Manual Reconcilation",
+          "title": "5. Manual Reconcilation",
           "text": "step5.md"
         }
       ],

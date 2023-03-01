@@ -9,43 +9,43 @@
       },
       "steps": [
         {
-          "title": "Flux Install with Image Automation Controllers",
+          "title": "1. Flux Install with Image Automation Controllers",
           "text": "step1.md"
         },
         {
-          "title": "Explore New Flux Components",
+          "title": "2. Explore New Flux Components",
           "text": "step2.md"
         },
         {
-          "title": "Explore bb-app-source Repo",
+          "title": "3. Explore bb-app-source Repo",
           "text": "step3.md"
         },
         {
-          "title": "Docker Login - Pull - Tag - Push",
+          "title": "4. Docker Login - Pull - Tag - Push",
           "text": "step4.md"
         },
         {
-          "title": "Update Image Name in bb-app-source Repo",
+          "title": "5. Update Image Name in bb-app-source Repo",
           "text": "step5.md"
         },
         {
-          "title": "Create Flux Source & Kustomization",
+          "title": "6. Create Flux Source & Kustomization",
           "text": "step6.md"
         },
         {
-          "title": "Check Flux Status and Application",
+          "title": "7. Check Flux Status and Application",
           "text": "step7.md"
         },
         {
-          "title": "Create Flux Image Repository",
+          "title": "8. Create Flux Image Repository",
           "text": "step8.md"
         },
         {
-          "title": "Check Flux Image Repo Status",
+          "title": "9. Check Flux Image Repo Status",
           "text": "step9.md"
         },
         {
-          "title": "Update Source Code, Docker Build & Flux Reconcile",
+          "title": "10. Update Source Code, Docker Build & Flux Reconcile",
           "text": "step10.md"
         }
       ],

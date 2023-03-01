@@ -9,31 +9,31 @@
       },
       "steps": [
         {
-          "title": "Flux Installation",
+          "title": "1. Flux Installation",
           "text": "step1.md"
         },
         {
-          "title": "Remove Secret from Infrastructure Repo",
+          "title": "2. Remove Secret from Infrastructure Repo",
           "text": "step2.md"
         },
         {
           "foreground": "foreground-3.sh",
           "background": "background-3.sh",
-          "title": "Delete Secret from Database Namespace",
+          "title": "3. Delete Secret from Database Namespace",
           "text": "step3.md"
         },
         {
           "foreground": "foreground-4.sh",
           "background": "background-4.sh",
-          "title": "Setup Bitnami Sealed Secret Components",
+          "title": "4. Setup Bitnami Sealed Secret Components",
           "text": "step4.md"
         },
         {
-          "title": "Encrypt Secret using Kubeseal",
+          "title": "5. Encrypt Secret using Kubeseal",
           "text": "step5.md"
         },
         {
-          "title": "Check Application Status",
+          "title": "6. Check Application Status",
           "text": "step6.md"
         }
       ],

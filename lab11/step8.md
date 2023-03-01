@@ -27,10 +27,3 @@ flux reconcile kustomization infra-database-kustomize-git-mysql
 ```
 kubectl -n database get secret secret-mysql -o json | jq .data.password -r | base64 -d
 ```{{exec}}
-
-<br>
-
-#### Access the Application
-Block Buster App - `version 7.9.0` `should be` accessible:
-
-# [Play Block Buster App - 7.9.0]({{TRAFFIC_HOST1_30009}})

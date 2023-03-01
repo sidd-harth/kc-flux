@@ -19,11 +19,11 @@ Name-Email: admin@bb.com
 EOF
 ```{{exec}}
 
-> Make a note of the `FingerPrint` displayed, it is used for `fetching/exporting` keys
+> Make a note of the `FingerPrint` displayed, `gpg: key **xxxxxxxxxxxxxxxx** marked as ultimately trusted`
 
 ```
 export FINGERPRINT=<<replace-finger-print>>
-```{{exec interrupt}}
+```{{exec}}
 
 <br>
 
@@ -69,7 +69,11 @@ cat ~/sops-gpg.key
     - From File Value: `~/sops-gpg.key`
     - Namespace: `flux-system`
 
+<details><summary>Check Solution</summary>
+
 ```
-kubectl create secret generic sops-gpg --from-file=sops.asc=~/sops-gpg.key -n flux-system 
+cd ~
+kubectl create secret generic sops-gpg --from-file=sops.asc=sops-gpg.key -n flux-system 
 ```{{exec}}
 
+</details>

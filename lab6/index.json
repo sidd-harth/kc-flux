@@ -9,35 +9,35 @@
       },
       "steps": [
         {
-          "title": "Install Flux Server",
+          "title": "1. Install Flux Server",
           "text": "step1.md"
         },
         {
-          "title": "Explore Helm Repo",
+          "title": "2. Explore Helm Repo",
           "text": "step2.md"
         },
         {
-          "title": "Package & Push Helm Chart",
+          "title": "3. Package & Push Helm Chart",
           "text": "step3.md"
         },
         {
-          "title": "Create Flux OCI Secret",
+          "title": "4. Create Flux OCI Secret",
           "text": "step4.md"
         },
         {
           "foreground": "foreground-5.sh",
           "background": "background-5.sh",
-          "title": "Create Flux Helm Source",
+          "title": "5. Create Flux Helm Source",
           "text": "step5.md"
         },
         {
 
           "title": "Create Flux Helm Release",
-          "text": "step6.md"
+          "text": "6. step6.md"
         },
         {
           "title": "Check Flux Status and Application",
-          "text": "step7.md"
+          "text": "7. step7.md"
         }
       ],
       "finish": {

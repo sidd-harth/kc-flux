@@ -15,7 +15,7 @@ git clone https://github.com/$GH_USERNAME/block-buster
 #### Modify Kustomization to add decryption spec:
 Here `secretRef` is the secret which we created in a earlier step
 ```
-cat <<EOF >>~/block-buster/flux-clusters/dev-cluster/infra-database-kustomize-git-mysql.yaml
+cat <<EOF >>~/block-buster/flux-clusters/dev-cluster/infra-database-kustomize-git-mysql.yml
   decryption:
     provider: sops
     secretRef:

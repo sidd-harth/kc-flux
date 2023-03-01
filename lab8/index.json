@@ -9,19 +9,19 @@
       },
       "steps": [
         {
-          "title": "Flux Install with Image Automation Controllers",
+          "title": "1. Flux Install with Image Automation Controllers",
           "text": "step1.md"
         },
         {
-          "title": "Check Flux Repository Status",
+          "title": "2. Check Flux Repository Status",
           "text": "step2.md"
         },
         {
-          "title": "Create Flux Image Policy",
+          "title": "3. Create Flux Image Policy",
           "text": "step3.md"
         },
         {
-          "title": "Check Updated App - 7.8.1",
+          "title": "4. Check Updated App - 7.8.1",
           "text": "step4.md"
         }
       ],

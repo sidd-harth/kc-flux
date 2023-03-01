@@ -14,7 +14,7 @@ sops -v
 #### Encrypt Plain Secret
 ```
 cat ~/secret-mysql.yml
-```
+```{{exec}}
 
 - Encrypt secret with `SOPS CLI` using below spec:
     - Operation: `encrypt`
@@ -38,7 +38,7 @@ sops --encrypt \
 Check encrypted secret
 ```
 cat ~/secret-mysql.yml
-```
+```{{exec}}
 
 > Move encrypted secret to `bb-app-source` repo and commit
 

@@ -9,39 +9,39 @@
       },
       "steps": [
         {
-          "title": "Flux Install with Image Automation Controllers",
+          "title": "1. Flux Install with Image Automation Controllers",
           "text": "step1.md"
         },
         {
-          "title": "Explore New Flux Image Components",
+          "title": "2. Explore New Flux Image Components",
           "text": "step2.md"
         },
         {
-          "title": "Create Flux Image Update",
+          "title": "3. Create Flux Image Update",
           "text": "step3.md"
         },
         {
-          "title": "Check Flux Image Update Status - 1",
+          "title": "4. Check Flux Image Update Status - 1",
           "text": "step4.md"
         },
         {
-          "title": "Update Deployment with Marker",
+          "title": "5. Update Deployment with Marker",
           "text": "step5.md"
         },
         {
-          "title": "Check Flux Image Update Status - 2",
+          "title": "6. Check Flux Image Update Status - 2",
           "text": "step6.md"
         },
         {
-          "title": "Working with Deploy Key",
+          "title": "7. Working with Deploy Key",
           "text": "step7.md"
         },
         {
-          "title": "Create Flux Status",
+          "title": "8. Create Flux Status",
           "text": "step8.md"
         },
         {
-          "title": "Check Flux Image Update Status - 3",
+          "title": "9. Check Flux Image Update Status - 3",
           "text": "step9.md"
         }
       ],

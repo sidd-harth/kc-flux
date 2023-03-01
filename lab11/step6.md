@@ -18,5 +18,16 @@ flux reconcile kustomization infra-database-kustomize-git-mysql
 
 </details>
 
-> Kustomization message show an error `errrrrrrrrrrr`, this happens becuase flux cannot decrypt the SOPS encrypted secret
+> Kustomization message show no error
+
+#### Check `secret` in `database` namespace
+```
+k -n database get secrets  secret-mysql -o json | jq .data.password -r | base64 -d
+```{{exec}}
+
+> It just print the `SOPS` encrypted string.
+
+> As of know, `Kustomization` is not doing any decryption.
+
+> In next step we will modify `Kustomization` to `decrypt` the `secret` before applying
 

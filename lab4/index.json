@@ -9,33 +9,33 @@
       },
       "steps": [
         {
-          "title": "Install Flux Server",
+          "title": "1. Install Flux Server",
           "text": "step1.md"
         },
         {
-          "title": "Explore GitHub Repo",
+          "title": "2. Explore GitHub Repo",
           "text": "step2.md"
         },
         {
           "foreground": "foreground-3.sh",
           "background": "background-3.sh",
-          "title": "Explore MinIO S3 Repo",
+          "title": "3. Explore MinIO S3 Repo",
           "text": "step3.md"
         },
         {
-          "title": "Create Minio K8S Secret",
+          "title": "4. Create Minio K8S Secret",
           "text": "step4.md"
         },
         {
-          "title": "Create Flux Bucket Source",
+          "title": "5. Create Flux Bucket Source",
           "text": "step5.md"
         },
         {
-          "title": "Create Flux Kustomization",
+          "title": "6. Create Flux Kustomization",
           "text": "step6.md"
         },
         {
-          "title": "Check Flux Status and Application",
+          "title": "7. Check Flux Status and Application",
           "text": "step7.md"
         }
       ],
