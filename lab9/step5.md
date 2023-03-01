@@ -25,11 +25,19 @@ tree manifests/
 
 <br>
 
-Check `image: siddharth67/block-buster-dev:7.8.0` within `deployment.yml`
+#### Add a `marker` to the image with deployment manifest
 
 ```
-cat ~/bb-app-source/manifests/deployment.yml | grep -i "siddharth67/block-buster-dev:7.8.0"
+sed -i 's/image:.*/&  # {"$imagepolicy": "flux-system:8-demo-image-policy-bb-app"}/g' ~/bb-app-source/manifests/deployment.yml
 ```{{exec}}
+
+
+Check `marker` within `deployment.yml`
+
+```
+cat ~/bb-app-source/manifests/deployment.yml | grep -i "image:"
+```{{exec}}
+
 
 <br>
 
