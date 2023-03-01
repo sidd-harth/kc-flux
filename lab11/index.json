@@ -1,0 +1,54 @@
+{
+    "title": "Lab 11 - Encryption via Mozilla SOPS",
+    "description": "We will work on secret encryption via Mozilla SOPS",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "1. Flux Installation",
+          "text": "step1.md"
+        },
+        {
+          "title": "2. Remove Secret from Infrastructure Repo",
+          "text": "step2.md"
+        },
+        {
+          "foreground": "foreground-3.sh",
+          "background": "background-3.sh",
+          "title": "3. Delete Secret from Database Namespace",
+          "text": "step3.md"
+        },
+        {
+          "title": "4. Working with SOPS Key",
+          "text": "step4.md"
+        },
+        {
+          "title": "5. Encrypt Secret using SOPS CLI",
+          "text": "step5.md"
+        },
+        {
+          "title": "6. Check Flux Status",
+          "text": "step6.md"
+        },
+        {
+          "title": "7. Modify Kuatomization",
+          "text": "step7.md"
+        },
+        {
+          "title": "8. Check Flux Status",
+          "text": "step8.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  
