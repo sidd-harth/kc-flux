@@ -1,7 +1,9 @@
-#### Access the Application
-Block Buster App - `version 7.x.0` `should be` accessible with below link:
+> Please wait for 60 seconds, we are setting up few things
 
-# [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
+#### Access the Application
+Block Buster App - `version 7.9.0` `should be` accessible with below link:
+
+# [Play Block Buster App - 7.9.0]({{TRAFFIC_HOST1_30009}})
 
 
 > Database namespace and resource were created behind the scenes in one of our earlier labs
@@ -18,17 +20,19 @@ kubectl -n database delete secret secret-mysql
 
 ```
 kubectl -n database rollout restart deployment mysql
+```{{exec}}
 
+```
 kubectl -n database get po
 ```
 
-> Check that the po get restarted with `Error Status`
+> Check that the po get restarted with `CreateContainerConfigError` becuase it does not fint the `secret`
 
 <br>
 
 #### Access the Application
-Block Buster App - `version 7.x.0` `should not` be accessible,
+Block Buster App - `version 7.9.0` `should not` be accessible,
 
-# [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
+# [Play Block Buster App - 7.9.0]({{TRAFFIC_HOST1_30009}})
 
 > You should see an error in the application UI, as it cannot connect with `MYSQL` Database

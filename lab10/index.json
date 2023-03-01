@@ -17,6 +17,8 @@
           "text": "step2.md"
         },
         {
+          "foreground": "foreground-3.sh",
+          "background": "background-3.sh",
           "title": "Delete Secret from Database Namespace",
           "text": "step3.md"
         },

@@ -6,12 +6,14 @@
     - Export Path: : `~/sealed-secret.pub`
 
 <details><summary>Check Solution</summary>
+
 ```
 kubeseal \
 --fetch-cert \
 --controller-name sealed-secrets-controller \
 --controller-namespace kube-system > ~/sealed-secret.pub
 ```{{exec}}
+
 </details>
 
 <br>
@@ -28,7 +30,7 @@ kubeseal \
 <details><summary>Check Solution</summary>
 
 ```
-kubeseal -o yaml --scope cluster-wide --cert ~/sealed-secret.pub < ~/secret-mysql.yaml > ~/block-buster/flux-clusters/dev-cluster/sealed-secret-mysql.yaml
+kubeseal -o yaml --scope cluster-wide --cert ~/sealed-secret.pub < ~/secret-mysql.yml >  ~/bb-app-source/database/sealed-secret-mysql.yml
 ```{{exec}}
 
 </details>
@@ -37,7 +39,7 @@ kubeseal -o yaml --scope cluster-wide --cert ~/sealed-secret.pub < ~/secret-mysq
 
 #### Check the Generated Encrypted Secret
 ```
-cat ~/block-buster/flux-clusters/dev-cluster/sealed-secret-mysql.yaml
+cat  ~/bb-app-source/database/sealed-secret-mysql.yml
 ```{{exec}}
 
 <br>
@@ -51,7 +53,7 @@ git config --global user.email "fluxcd@killercoda.com"
 git config --global user.name "FluxCD-Killercoda"
 git pull
 git add .
-git commit -m 'delete database secret'
+git commit -m 'added database secret'
 git push
 ```{{exec}}
 

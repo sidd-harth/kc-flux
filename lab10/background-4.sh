@@ -11,4 +11,4 @@ flux create kustomization infra-security-kustomize-git-sealed-secrets \
 --prune true \
 --interval 1h \
 --path ./bitnami-sealed-secrets  \
---export > `~/block-buster/flux-clusters/dev-cluster/infra-security-kustomize-git-sealed-secrets.yml
+--export > ~/block-buster/flux-clusters/dev-cluster/infra-security-kustomize-git-sealed-secrets.yml

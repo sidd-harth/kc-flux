@@ -13,10 +13,12 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 ```
 flux reconcile source git flux-system
 
-flux reconcile git infra-source-git
+flux reconcile source git infra-source-git
 ```{{exec}}
 
 </details>
+
+<br>
 
 #### Check `secret` within `database` namespace
 1. Flux will pull `sealed-secret`
@@ -29,6 +31,6 @@ kubectl -n database get secret secret-mysql -o json | jq .data.password -r | bas
 <br>
 
 #### Access the Application
-Block Buster App - `version 7.x.0` `should be` accessible:
+Block Buster App - `version 7.9.0` `should be` accessible:
 
-# [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
+# [Play Block Buster App - 7.9.0]({{TRAFFIC_HOST1_30009}})

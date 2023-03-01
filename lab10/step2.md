@@ -31,8 +31,6 @@ Check `plain-text secret`
 cat ~/bb-app-source/database/secret-mysql.yml | grep -i "password"
 ```{{exec}}
 
-<br>
-
 > We will delete this `plain-text-secret` and replace it with a secured `encrypted` secret
 
 Before `deleting` lets `copy` the `secret` to `root` directory

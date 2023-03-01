@@ -2,8 +2,11 @@
 
 `Bitnami Sealed Secret Controller` is installed in `kube-system` namespace.
 ```
-kubectl -n kube-system get po | grep -i sealed
+kubectl -n kube-system get po | grep -i "sealed-secrets-controller"
 ```{{exec}}
+
+
+<br>
 
 #### Clone `block-butser` repo
 Copy the below command, replace the value field and run it,
@@ -26,6 +29,9 @@ Commit it to your repo by following the below steps.
 ```
 cat ~/block-buster/flux-clusters/dev-cluster/infra-security-kustomize-git-sealed-secrets.yml
 ```{{exec}}
+
+
+<br>
 
 #### Add, Commit, Push the changes to `block-buster` repo
 > When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
