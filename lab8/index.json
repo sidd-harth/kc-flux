@@ -1,0 +1,36 @@
+{
+    "title": "Lab 8 - Flux Image Controller - Policy",
+    "description": "We will work on Flux Image Controller - Policy",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Flux Install with Image Automation Controllers",
+          "text": "step1.md"
+        },
+        {
+          "title": "Check Flux Repository Status",
+          "text": "step2.md"
+        },
+        {
+          "title": "Create Flux Image Policy",
+          "text": "step3.md"
+        },
+        {
+          "title": "Check Updated App - 7.8.1",
+          "text": "step4.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  
