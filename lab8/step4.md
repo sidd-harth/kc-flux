@@ -20,7 +20,7 @@ flux get images policy 8-demo-image-policy-bb-app
 
 > Check the Message of Previous command, it should mention,
 
-> Latest image tag for 'docker.io/<<YOUR-DOCKER-USERNAME>>/bb-app-flux-demo-killercoda' resolved to: `7.8.1`
+> Latest image tag for `docker.io/<<YOUR-DOCKER-USERNAME>>/bb-app-flux-demo-killercoda` resolved to: `7.8.1`
 
 <br>
 
@@ -40,4 +40,4 @@ Now `access/play` Block Buster App - `version 7.8.0` using the below link:
 
 # [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
 
-> Check updated color and version as set in previous lab
+> In next lab we will use Automation controller to `automatically` update the `deployment.yaml` with new version.

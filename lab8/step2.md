@@ -11,6 +11,8 @@ kubectl -n flux-system get po,deploy
 kubectl get crds | grep -i image
 ```{{exec}}
 
+<br>
+
 #### Check Flux Repository Status
 In the previous lab we have created a `Flux Repository` Object, lets check it's Status.
 - Run a `flux` cmd to `get` the `image` status using below spec:
