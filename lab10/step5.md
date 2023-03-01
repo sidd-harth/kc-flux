@@ -18,6 +18,13 @@ kubeseal \
 
 <br>
 
+#### Check Exported Public Cert
+```
+cat  ~/sealed-secret.pub
+```{{exec}}
+
+<br>
+
 #### Encrypt the Secret using `kubeseal`
 - Follow the below spec to encrypt the secret manifest:
     - Command: `kubeseal` (already installed)
