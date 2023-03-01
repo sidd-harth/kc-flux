@@ -1,43 +1,41 @@
-#### Check Flux Status
-As soon as the manifests are pushed to the repository, Flux will pull manifests and reconcile the cluster to deploy all the manifests.
+> Please wait for 60 seconds, we are installing `Bitnami Sealed Secret Controller`
+
+`Bitnami Sealed Secret Controller` is installed in `kube-system` namespace.
+```
+kubectl -n kube-system get po | grep -i sealed
+```{{exec}}
+
+#### Clone `block-butser` repo
+Copy the below command, replace the value field and run it,
+
+```
+export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
+```{{copy}}
+
+```
+cd ~
+git clone https://github.com/$GH_USERNAME/block-buster
+```{{exec}}
 
 <br>
 
-#### Check Flux Status
-- Run a `flux` cmd to `get` the `image` status using below spec:
-    - Type: `policy`
-    - Name: `8-demo-image-policy-bb-app`
-
-<details><summary>Check Solution</summary>
+#### Check the Generated YAML
+We generated and saved the `Bitnami Sealed Secret` spec at the below location.
+Commit it to your repo by following the below steps.
 
 ```
-flux reconcile source git flux-system
-
-flux get images policy 8-demo-image-policy-bb-app
+cat ~/block-buster/flux-clusters/dev-cluster/infra-security-kustomize-git-sealed-secrets.yml
 ```{{exec}}
 
-</details>
+#### Add, Commit, Push the changes to `block-buster` repo
+> When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
 
-> Check the Message of Previous command, it should mention,
-
-> Latest image tag for `docker.io/<<YOUR-DOCKER-USERNAME>>/bb-app-flux-demo-killercoda` resolved to: `7.8.1`
-
-<br>
-
-#### Check Kubernetes Namespace
-A new namespace `8-demo` is created
 ```
-k get ns
+cd ~/block-buster
+git config --global user.email "fluxcd@killercoda.com"
+git config --global user.name "FluxCD-Killercoda"
+git pull
+git add .
+git commit -m 8-demo
+git push
 ```{{exec}}
-
-Check the status of deployment, pod, service are in `RUNNING` state
-```
-k -n 8-demo get all
-```{{exec}}
-
-#### Access the application on its NodePort
-Now `access/play` Block Buster App - `version 7.8.0` using the below link:
-
-# [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
-
-> In next lab we will use Automation controller to `automatically` update the `deployment.yaml` with new version.

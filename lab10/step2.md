@@ -1,17 +1,4 @@
-#### Delete `secret`
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Clone `bb-app-source` repo
 Copy the below command, replace the value field and run it,
 
 ```
@@ -47,6 +34,11 @@ cat ~/bb-app-source/database/secret-mysql.yml | grep -i "password"
 <br>
 
 > We will delete this `plain-text-secret` and replace it with a secured `encrypted` secret
+
+Before `deleting` lets `copy` the `secret` to `root` directory
+```
+cp ~/bb-app-source/database/secret-mysql.yml ~/secret-mysql.yml
+```{{exec}}
 
 ```
 rm ~/bb-app-source/database/secret-mysql.yml

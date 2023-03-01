@@ -9,20 +9,30 @@
       },
       "steps": [
         {
-          "title": "Flux Install with Image Automation Controllers",
+          "title": "Flux Installation",
           "text": "step1.md"
         },
         {
-          "title": "Check Flux Repository Status",
+          "title": "Remove Secret from Infrastructure Repo",
           "text": "step2.md"
         },
         {
-          "title": "Create Flux Image Policy",
+          "title": "Delete Secret from Database Namespace",
           "text": "step3.md"
         },
         {
-          "title": "Check Updated App - 7.8.1",
+          "foreground": "foreground-4.sh",
+          "background": "background-4.sh",
+          "title": "Setup Bitnami Sealed Secret Components",
           "text": "step4.md"
+        },
+        {
+          "title": "Encrypt Secret using Kubeseal",
+          "text": "step5.md"
+        },
+        {
+          "title": "Check Application Status",
+          "text": "step6.md"
         }
       ],
       "finish": {
