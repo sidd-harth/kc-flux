@@ -1,0 +1,19 @@
+{
+    "title": "FluxCD Course",
+    "description": "This is the description of course",
+    "items": [
+      
+      { "path": "../lab1" },
+      { "path": "../lab2" },
+      { "path": "../lab3" },
+      { "path": "../lab4" },
+      { "path": "../lab5" },
+      { "path": "../lab6" },
+      { "path": "../lab7" },
+      { "path": "../lab8" },
+      { "path": "../lab9" },
+      { "path": "../lab10" }
+      
+    ]
+  }
+  

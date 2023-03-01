@@ -24,7 +24,7 @@ kubectl -n database rollout restart deployment mysql
 
 ```
 kubectl -n database get po
-```
+```{{exec}}
 
 > Check that the po get restarted with `CreateContainerConfigError` becuase it does not fint the `secret`
 
