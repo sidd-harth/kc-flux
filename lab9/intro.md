@@ -1,6 +1,6 @@
 
 
-In this lab we'll learn how to Flux Image Controller - Update works to fetch new container image tags.
+In this lab we'll learn how Flux Image Controller - Update works to update new container image tags.
 
 This lab is part of my [Udemy Course](https://www.udemy.com/user/siddharth-barahalikar/)
 

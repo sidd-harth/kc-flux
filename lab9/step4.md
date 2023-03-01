@@ -3,7 +3,7 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 
 <br>
 
-#### Check Flux Status
+#### Check Flux Update Status
 - Run a `flux` cmd to `get` the `image` status using below spec:
     - Type: `update`
     - Name: `8-demo-image-update-bb-app`

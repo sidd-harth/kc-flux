@@ -27,6 +27,17 @@ flux create secret git 8-demo-git-bb-app-auth \
 
 </details>
 
+> Previous command outputs a `DEPLOY KEY` copy it starting from `ecdsa-sha2-nistp521 .... `
+
+<br>
+
+#### Add `Deploy Key` to `bb-app-source` repo
+- Go to your `bb-app-source` repo and add a deploy key following below steps:
+    - [Click and Follow Steps 3,4,5,6,7,8] (https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#set-up-deploy-keys)
+        - Title: `flux-key`
+        - Key: `copy-paste from previous command output`
+        - Allow Write Access: `Enable` 
+
 <br>
 
 #### Update `8-demo-source-git-bb-app` Git Source
@@ -45,7 +56,7 @@ flux create source git 8-demo-source-git-bb-app \
 > When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
 
 ```
-cd ~/bb-app-source
+cd ~/block-buster
 git config --global user.email "fluxcd@killercoda.com"
 git config --global user.name "FluxCD-Killercoda"
 git pull

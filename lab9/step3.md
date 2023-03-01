@@ -43,7 +43,7 @@ git clone https://github.com/$GH_USERNAME/block-buster
 
 #### Check the Generated YAML
 ```
-cat ~/block-buster/flux-clusters/dev-cluster/8-demo-image-policy-bb-app.yml
+cat ~/block-buster/flux-clusters/dev-cluster/8-demo-image-update-bb-app.yml
 ```{{exec}}
 
 <br>

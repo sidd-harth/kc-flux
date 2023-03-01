@@ -20,8 +20,6 @@ flux get images update 8-demo-image-update-bb-app
 
 > Check the Message of Previous command, it should mention, `authentication required`
 
-<br>
-
 > `Authentication` failed because `Flux` requires a `Deploy Key` to `push` changes to `bb-app-source` repo
 
 

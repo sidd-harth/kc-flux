@@ -14,6 +14,9 @@ flux get images update 8-demo-image-update-bb-app
 > Check the Message of Previous command, it should mention, `.... last commit ....`
 
 #### Check Deployment using new `7.8.1 image tag`
+```
+flux reconcile source git 8-demo-source-git-bb-app
+```{{exec}}
 
 ```
 k -n 8-demo get deployment -o wide | grep -i "7.8.1"
