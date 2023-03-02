@@ -1,0 +1,28 @@
+{
+    "title": "Lab 14 - Flux User Interface",
+    "description": "We will setup Flux User Interface",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "1. Flux Installation",
+          "text": "step1.md"
+        },
+        {
+          "title": "2. Setting Up Weaveworks Flux UI",
+          "text": "step2.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  

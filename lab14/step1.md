@@ -1,5 +1,3 @@
-> This Lab has `OOM - Memory Issues`. Try restarting Lab if required
-
 #### Check Flux CLI Version
 Flux CLI is already installed for you, check it's version to confirm,
 
