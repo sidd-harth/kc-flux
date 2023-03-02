@@ -6,7 +6,7 @@ mv cosign-linux-amd64 /usr/local/bin/cosign
 
 chmod +x /usr/local/bin/cosign
 
-cosing -v
+cosign version
 ```{{exec}}
 
 <br>
@@ -40,6 +40,6 @@ cosign sign --key ~/cosign.key ghcr.io/$GH_USERNAME/bb-app@sha256:b1f6.....
 
 </details>
 
-> Cosign Private key is used for signing
+> Cosign `Private Key` is used for signing
 
-> Refer Github Packages for this artifact - A new key is pushed by cosign
+> Refer Github Packages for this artifact - A new `signature` is pushed by cosign

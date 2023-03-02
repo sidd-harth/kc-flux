@@ -20,8 +20,8 @@ We will deploy `manifests` from `10-demo` branch within `bb-source-app` repo
 ```
 flux create source oci 10-demo-source-oci-bb-app \
 --url oci://ghcr.io/$GH_USERNAME/bb-app \
---tag 7.10.0-xxxxxxxxx \ (replace the tag)
---secret-ref ghcr-auth \
+--tag 7.10.0-xxxxxxxxx \
+--secret-ref cosign-pub \
 --provider generic \
 --export > ~/block-buster/flux-clusters/dev-cluster/10-demo-source-oci-bb-app.yml
 ```{{copy}}

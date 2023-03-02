@@ -28,5 +28,5 @@ tree manifests/
 Check `image tag - 7.10.0` within `deployment.yaml`
 
 ```
-cat ~/bb-app-source/manifests/deployment.yaml | grep -i 7.10.0
+cat ~/bb-app-source/manifests/deployment.yml | grep -i 7.10.0
 ```{{exec}}
