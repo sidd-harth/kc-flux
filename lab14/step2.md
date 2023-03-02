@@ -23,11 +23,11 @@ gitops create dashboard fluxcd-dashboard \
 
 #### Port Forwarding
 ```
-kubectl -n flux-system port-forward --address 0.0.0.0 service/fluxcd-dashboard-weave-gitops 80:80
+kubectl -n flux-system port-forward --address 0.0.0.0 service/fluxcd-dashboard-weave-gitops 9001:9001
 ```{{exec}}
 
 Now access it via
 
-[ACCESS Flux User Interface]({{TRAFFIC_HOST1_80}})
+[ACCESS Flux User Interface]({{TRAFFIC_HOST1_9001}})
 - Username: `admin`
 - Password: `12345`
