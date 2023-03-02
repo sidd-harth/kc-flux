@@ -45,8 +45,20 @@ flux push artifact oci://ghcr.io/$GH_USERNAME/bb-app:7.10.0-$(git rev-parse --sh
 
 <br>
 
+#### Exporting Variables to use in upcoming Steps
+```
+cd ~/bb-app-source
+
+export OCI_TAG=$(git rev-parse --short HEAD)
+```{{exec}}
+
+<br>
+
 #### Go to GitHub Package and checkout the new package - https://github.com/$GH_USERNAME?tab=packages
 
 > Replace $GH_USERNAME with your GitHub Username
 
-> Make a note of SHA256 string, we will use it in the next step
+
+
+
+

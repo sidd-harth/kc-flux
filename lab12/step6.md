@@ -13,25 +13,25 @@ git clone https://github.com/$GH_USERNAME/block-buster
 <br>
 
 #### Generate Flux Source
-We will deploy `manifests` from `10-demo` branch within `bb-source-app` repo
+We will Pull `OCI Artifact` Pushed by `flux` in `Step 3`
 
 <details><summary>Flux Source</summary>
 
 ```
 flux create source oci 10-demo-source-oci-bb-app \
 --url oci://ghcr.io/$GH_USERNAME/bb-app \
---tag 7.10.0-xxxxxxxxx \
---secret-ref cosign-pub \
+--tag 7.10.0-$OCI_TAG \
+--secret-ref ghcr-auth \
 --provider generic \
 --export > ~/block-buster/flux-clusters/dev-cluster/10-demo-source-oci-bb-app.yml
-```{{copy}}
+```{{exec}}
 
 </details>
 
 <br>
 
 #### Modify Source to add Cosign Verify spec:
-Here `secretRef` is the secret which we created in a earlier step
+Here `secretRef` is the secret which we created in a earlier `step 5`
 ```
 cat <<EOF >>~/block-buster/flux-clusters/dev-cluster/10-demo-source-oci-bb-app.yml
   verify:
@@ -51,7 +51,8 @@ cat ~/block-buster/flux-clusters/dev-cluster/10-demo-source-oci-bb-app.yml
 <br>
 
 #### Generate Flux Kustomization
-We will deploy `manifests` from `10-demo` branch within `bb-source-app` repo
+We will deploy `OCI Artifact` Pushed by `flux` in `Step 3`
+
 
 <details><summary>Flux Kustomization</summary>
 

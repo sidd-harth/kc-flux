@@ -28,14 +28,13 @@ cosign generate-key-pair
 - Sign the artifact using following spec:
     - Command: `cosign sign`
     - Key: `~/cosign.key`
-    - OCI Artifact: `ghcr.io/$GH_USERNAME/bb-app@sha256:b1f6.....`
-        - Make sure you enter the correct sha256 of your artifact
+    - OCI Artifact: `ghcr.io/$GH_USERNAME/bb-app:7.10.0-$OCI_TAG`
     - When prompted for password for private key: `enter the password which was entered in Generate Cosign Keypair step`
 
 <details><summary>Check Solution</summary>
 
 ```
-cosign sign --key ~/cosign.key ghcr.io/$GH_USERNAME/bb-app@sha256:b1f6.....
+cosign sign --key ~/cosign.key ghcr.io/$GH_USERNAME/bb-app:7.10.0-$OCI_TAG
 ```{{copy}}
 
 </details>

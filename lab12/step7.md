@@ -13,6 +13,8 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 ```
 flux reconcile source git flux-system
 
+flux reconcile source oci 10-demo-source-oci-bb-app
+
 flux get source oci 10-demo-source-oci-bb-app
 ```{{exec}}
 
@@ -21,26 +23,11 @@ flux get source oci 10-demo-source-oci-bb-app
 <br>
 
 #### Check Cosign Verification
-We can check the source is getting verified using below command,
+We can check the source is getting verified using below `kubectl` command,
 
 ```
-kubectl -n flux-system get ocirepositories.source.toolkit.fluxcd.io 10-demo-source-oci-bb-app -o yaml | grep -i Verified -A5 -B5
+kubectl -n flux-system get ocirepositories.source.toolkit.fluxcd.io 10-demo-source-oci-bb-app -o yaml | grep -i Verified
 ```{{exec}}
 
-<br>
 
-#### Check Kubernetes Namespace
-A new namespace `10-demo` is created
-```
-k get ns
-```{{exec}}
-
-Check the status of deployment, pod, service are in `RUNNING` state
-```
-k -n 10-demo get all
-```{{exec}}
-
-#### Access the application on its NodePort
-Now `access/play` Block Buster App - `version 7.10.0` using the below link:
-
-# [Play Block Buster App - 7.10.0]({{TRAFFIC_HOST1_30010}})
+> The previous command should display an ouput similar to - `Source Verified`
