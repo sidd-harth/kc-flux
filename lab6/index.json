@@ -32,12 +32,12 @@
         },
         {
 
-          "title": "Create Flux Helm Release",
-          "text": "6. step6.md"
+          "title": "6. Create Flux Helm Release",
+          "text": "step6.md"
         },
         {
-          "title": "Check Flux Status and Application",
-          "text": "7. step7.md"
+          "title": "7. Check Flux Status and Application",
+          "text": "step7.md"
         }
       ],
       "finish": {
