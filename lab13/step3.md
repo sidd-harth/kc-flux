@@ -12,7 +12,7 @@ Run and observe the output of below commands
 ```
 git clone https://github.com/fluxcd/flux2
 
-tree flux2/manifests/monitoring/
+tree flux2/manifests/monitoring/monitoring-config
 ```{{exec}}
 
 <br>
@@ -21,16 +21,16 @@ tree flux2/manifests/monitoring/
 Run and observe the output of below commands
 
 ```
-cd flux2/manifests/monitoring/
+cd flux2/manifests/monitoring
 
 kubectl kustomize monitoring-config/ > ~/pod-monitor-and-grafana-dashboard.yml
 
-kubectl apply -f ~/pod-monitor-and-grafana-dashboard.yml.yml 
+kubectl apply -f ~/pod-monitor-and-grafana-dashboard.yml
 ```{{exec}}
 
 <br>
 
 #### Access Dashboards
-Refresh both `Prometheus` and `Grafana` UI 
+- Refresh both `Prometheus` and `Grafana` UI 
     - Within [Prometheus]({{TRAFFIC_HOST1_30202}}) we should see `Flux Targets`
     - Within [Grafana]({{TRAFFIC_HOST1_30101}}) we should see `Flux Dashboards`

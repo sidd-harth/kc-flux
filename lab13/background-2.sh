@@ -14,7 +14,7 @@ kubectl create ns monitoring
 
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
-helm install my-kube-prometheus-stack prometheus-community/kube-prometheus-stack --version 35.3.0 -n monitoring
+helm install -f ~/values.yml my-kube-prometheus-stack prometheus-community/kube-prometheus-stack --version 35.3.0 -n monitoring
 
 kubectl -n monitoring patch svc my-kube-prometheus-stack-grafana -p '{"spec": {"ports": [{"port": 80,"targetPort": 3000,"name": "http-web","protocol":"TCP","nodePort":30101}],"type": "NodePort"}}'
 

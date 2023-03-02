@@ -8,18 +8,30 @@ kubectl -n monitoring  get all
 
 <br>
 
-#### Access Prometheus User Interface
+> If `Grafana` & `Prometheus` service type is not `NodePort`. Execute below patch commands.
+
+```
+kubectl -n monitoring patch svc my-kube-prometheus-stack-grafana -p '{"spec": {"ports": [{"port": 80,"targetPort": 3000,"name": "http-web","protocol":"TCP","nodePort":30101}],"type": "NodePort"}}'
+
+kubectl -n monitoring patch svc my-kube-prometheus-stack-prometheus -p '{"spec": {"ports": [{"port": 9090,"targetPort": 9090,"name": "http-web","protocol":"TCP","nodePort":30202}],"type": "NodePort"}}'
+```{{exec}}
+
+<br>
+
+#### Prometheus
+[Access Prometheus User Interface]({{TRAFFIC_HOST1_30202}})
+
 - Within `Prometheus UI` check the `Targets`
     - Click on Status
         - Click on Target
 
 > Notice that we `**do not**` have any `Targets` for `Flux`
 
-## [Prometheus UI]({{TRAFFIC_HOST1_30202}})
 
 <br>
 
-#### Access Grafana User Interface
+#### Grafana
+[Access Grafana User Interface]({{TRAFFIC_HOST1_30101}})
 - Login to `Grafana UI` check the `Dashboard`
     - Username: `admin`
     - Password: `prom-admin`
@@ -27,4 +39,3 @@ kubectl -n monitoring  get all
 
 > Notice that we `**do not**` have any `Dashboards` for `Flux`
 
-## [Grafana UI]({{TRAFFIC_HOST1_30101}})
