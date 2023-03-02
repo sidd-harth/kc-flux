@@ -13,7 +13,7 @@ git clone https://github.com/$GH_USERNAME/bb-app-source
 <br>
 
 #### Explore `database` manifests within `infrastructure` branch 
-Change to `bb-app-source` repo directory and Checkout `8-demo` branch
+Change to `bb-app-source` repo directory and Checkout `infrastructure` branch
 
 ```
 cd bb-app-source

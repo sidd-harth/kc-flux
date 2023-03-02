@@ -1,0 +1,48 @@
+{
+    "title": "Lab 12 - OCI Artifact Cosign Verfication",
+    "description": "We will work on Cosign + OCI Artifacts",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "1. Flux Installation",
+          "text": "step1.md"
+        },
+        {
+          "title": "2. Checkout 10-demo Manifests",
+          "text": "step2.md"
+        },
+        {
+          "title": "3. Generate & Push OCI Artifact",
+          "text": "step3.md"
+        },
+        {
+          "title": "4. Sign Artifact using Cosign",
+          "text": "step4.md"
+        },
+        {
+          "title": "5. Manually Verify OCI Artifact Signature",
+          "text": "step5.md"
+        },
+        {
+          "title": "6. Create a Source with Cosign Verification",
+          "text": "step6.md"
+        },
+        {
+          "title": "7. Check Flux Source and Application",
+          "text": "step7.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  
