@@ -56,6 +56,6 @@ git config --global user.email "fluxcd@killercoda.com"
 git config --global user.name "FluxCD-Killercoda"
 git pull
 git add .
-git commit -m 'delete database secret'
+git commit -m 'add sops database secret'
 git push
 ```{{exec}}

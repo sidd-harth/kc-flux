@@ -23,8 +23,6 @@ git checkout infrastructure
 tree database/
 ```{{exec}}
 
-<br>
-
 > We will delete this `sealed-secret-mysql` and replace it with a `Mozilla SOP Encrypted` secret
 
 ```
