@@ -17,6 +17,10 @@ alertmanager:
 prometheus:
   prometheusSpec:
     retention: 24h
+    resources:
+        requests:
+            cpu: 200m
+            memory: 200Mi
     podMonitorNamespaceSelector: {}
     podMonitorSelector:
       matchLabels:
