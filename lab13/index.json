@@ -1,0 +1,34 @@
+{
+    "title": "Lab 13 - Monitor Flux using Prometheus Grafana",
+    "description": "We will Monitor Flux using Prometheus Targets and Grafana Dashboards",
+    "details": {
+      "intro": {
+        "foreground": "foreground.sh",
+        "background": "background.sh",
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "1. Flux Installation",
+          "text": "step1.md"
+        },
+        {
+          "foreground": "foreground-2.sh",
+          "background": "background-2.sh",
+          "title": "2. Setting Up Prometheus & Grafana",
+          "text": "step2.md"
+        },
+        {
+          "title": "3. Applying Monitoring Configs",
+          "text": "step3.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  
