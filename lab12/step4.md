@@ -35,7 +35,7 @@ cosign generate-key-pair
 
 ```
 cosign sign --key ~/cosign.key ghcr.io/$GH_USERNAME/bb-app:7.10.0-$OCI_TAG
-```{{copy}}
+```{{exec}}
 
 </details>
 

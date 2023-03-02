@@ -1,7 +1,3 @@
-> This step requires your `DockerHub credentials/account`
-
-<br>
-
 #### GHCR Login
 - Login to `GHCR` using `Docker CLI`
     - Username: `your-GITHUB-Username`

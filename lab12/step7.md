@@ -1,10 +1,5 @@
 #### Check Flux Status
-As soon as the manifests are pushed to the repository, Flux will pull manifests and reconcile the cluster to deploy all the manifests.
-
-<br>
-
-#### Check Flux Status
-- Run a `flux` cmd to `get` the `source` status using below spec:
+- Run a `flux` cmd to `reconcile & get` the `source` status using below spec:
     - Type: `oci`
     - Name: `10-demo-source-oci-bb-app`
 
@@ -31,3 +26,5 @@ kubectl -n flux-system get ocirepositories.source.toolkit.fluxcd.io 10-demo-sour
 
 
 > The previous command should display an ouput similar to - `Source Verified`
+
+> This proves that the `OCI Artifact Source` was indeed verified by `Flux` using `Cosign`

@@ -1,16 +1,11 @@
 #### Verify OCI Artifact with Cosign
 Command used is `cosign verify`
 
-> Cosign Public key is used for verifying the signature
-
-<details><summary>Check Solution</summary>
-
 ```
 cosign verify --key cosign.pub ghcr.io/$GH_USERNAME/bb-app:7.10.0-$OCI_TAG
 ```{{exec}}
 
-</details>
-
+> Cosign Public key is used for verifying the signature
 
 <br>
 
@@ -57,7 +52,7 @@ We will use `flux` to connect to `GHCR OCI Repo` and fetch the manifests or Helm
 flux create secret oci ghcr-auth \
 --url ghcr.io \
 --username $GH_USERNAME \
---password your-github-pesonal-access-token-pat>>>>>>>>
+--password your-github-pesonal-access-token-pat>>>>>
 ```{{exec interrupt}}
 
 </details>

@@ -15,8 +15,6 @@ git clone https://github.com/$GH_USERNAME/block-buster
 #### Generate Flux Source
 We will Pull `OCI Artifact` Pushed by `flux` in `Step 3`
 
-<details><summary>Flux Source</summary>
-
 ```
 flux create source oci 10-demo-source-oci-bb-app \
 --url oci://ghcr.io/$GH_USERNAME/bb-app \
@@ -25,8 +23,6 @@ flux create source oci 10-demo-source-oci-bb-app \
 --provider generic \
 --export > ~/block-buster/flux-clusters/dev-cluster/10-demo-source-oci-bb-app.yml
 ```{{exec}}
-
-</details>
 
 <br>
 
@@ -47,25 +43,6 @@ EOF
 ```
 cat ~/block-buster/flux-clusters/dev-cluster/10-demo-source-oci-bb-app.yml
 ```{{exec}}
-
-<br>
-
-#### Generate Flux Kustomization
-We will deploy `OCI Artifact` Pushed by `flux` in `Step 3`
-
-
-<details><summary>Flux Kustomization</summary>
-
-```
-flux create kustomization 10-demo-kustomize-oci-bb-app \
---source OCIRepository/10-demo-source-oci-bb-app \
---target-namespace 10-demo \
---interval 10s \
---prune false \
---export > ~/block-buster/flux-clusters/dev-cluster/10-demo-kustomize-oci-bb-app.yml
-```{{exec}}
-
-</details>
 
 <br>
 

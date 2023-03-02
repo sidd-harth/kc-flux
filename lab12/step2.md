@@ -22,11 +22,3 @@ git checkout 10-demo
 
 tree manifests/
 ```{{exec}}
-
-<br>
-
-Check `image tag - 7.10.0` within `deployment.yaml`
-
-```
-cat ~/bb-app-source/manifests/deployment.yml | grep -i 7.10.0
-```{{exec}}
