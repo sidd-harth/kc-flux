@@ -27,3 +27,5 @@ flux reconcile kustomization infra-database-kustomize-git-mysql
 ```
 kubectl -n database get secret secret-mysql -o json | jq .data.password -r | base64 -d
 ```{{exec}}
+
+> Password displayed should be `mysql-password-0123456789`
