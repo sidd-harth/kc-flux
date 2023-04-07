@@ -1,8 +1,7 @@
 {
-    "title": "FluxCD Course",
-    "description": "This is the description of course",
+  "title": "FluxCD - GitOps",
+  "description": "Learn and Practise Flux CD via interactive Labs",
     "items": [
-      
       { "path": "../lab1" },
       { "path": "../lab2" },
       { "path": "../lab3" },
