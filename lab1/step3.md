@@ -14,7 +14,6 @@ You can set up Flux to manage itself from a Git repository and install it on a K
     - Path: `flux-clusters/dev-cluster`
     - Personal: `true`
     - Private: `false`
-    - Version: `v0.40.0`
 
 GitHub Personal Access Token - PAT
   - `Bootstrap` will prompt for a `GitHub Personal Access Token - PAT`
@@ -28,7 +27,7 @@ Copy the below command, replace the value field and run it,
 
 ```
 export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
-```{{copy}}
+```{{exec interrupt}}
 ----
 ```
 flux bootstrap github \
@@ -36,8 +35,7 @@ flux bootstrap github \
   --repository=block-buster \
   --path=flux-clusters/dev-cluster \
   --personal=true \
-  --private=false \
-  --version=v0.40.0
+  --private=false
 ```{{exec}}
 
 </details>
@@ -45,5 +43,5 @@ flux bootstrap github \
 <br>
 Wait till you see this log message `✔ all components are healthy` and then click on `NEXT`.
 
-
+<br>
 ###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
