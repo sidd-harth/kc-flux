@@ -44,4 +44,5 @@ flux bootstrap github \
 Wait till you see this log message `✔ all components are healthy` and then click on `NEXT`.
 
 <br>
+
 ###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

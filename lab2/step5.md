@@ -64,3 +64,8 @@ Earlier the app deployment had only 1 replica, now it should have 3 running pods
 ```
 k -n 1-demo get pod
 ```{{exec}}
+
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

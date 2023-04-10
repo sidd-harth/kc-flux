@@ -1,5 +1,3 @@
-
-
 In this lab we'll learn how to install **Flux CLI** and **Flux Server Components** within a Kubernetes Cluster.
 
 > Udemy Course - [FluxCD 101](https://www.udemy.com/course/gitops-flux)

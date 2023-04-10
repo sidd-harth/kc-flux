@@ -52,3 +52,7 @@ k -n 1-demo get all
 Now `access/play` Block Buster App - `version 7.1.0` using the below link:
 
 # [Play Block Buster App - 7.1.0]({{TRAFFIC_HOST1_30001}})
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

@@ -20,8 +20,7 @@ flux bootstrap github \
   --repository=block-buster \
   --path=flux-clusters/dev-cluster \
   --personal=true \
-  --private=false \
-  --version=v0.40.0
+  --private=false
 ```{{exec}}
 
 GitHub Personal Access Token - PAT
@@ -31,3 +30,7 @@ GitHub Personal Access Token - PAT
 - Check the logs to understand what is happening.
 
 Wait till you see this log message `✔ all components are healthy` and then click on `NEXT`.
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
