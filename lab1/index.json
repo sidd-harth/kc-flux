@@ -1,6 +1,6 @@
 {
     "title": "Lab 1 - Setup Flux CLI and Server",
-    "description": "Installing Flux CLI and deploy Flux Server on a single node Kubernetes cluster",
+    "description": "Installing Flux CLI and deploy Flux Server Componenets on a single node Kubernetes cluster",
     "details": {
       "intro": {
         "foreground": "foreground.sh",
