@@ -6,7 +6,7 @@ Block Buster App - `version 7.9.0` `should be` accessible with below link:
 # [Play Block Buster App - 7.9.0]({{TRAFFIC_HOST1_30009}})
 
 
-> Database namespace and resource were created behind the scenes in one of our earlier labs
+> Database namespace and resource were created in one of our earlier labs
 
 #### Check `database` namespace
 ```
@@ -26,7 +26,7 @@ kubectl -n database rollout restart deployment mysql
 kubectl -n database get po
 ```{{exec}}
 
-> Check that the po get restarted with `CreateContainerConfigError` becuase it does not fint the `secret`
+> Check that the po get restarted with `CreateContainerConfigError` becuase it does not find the `secret`
 
 <br>
 

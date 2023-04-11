@@ -1,5 +1,5 @@
 #### Clone `bb-app-source` repo
-Copy the below command, replace the value field and run it,
+- Copy the below command, replace the value field and run it,
 
 ```
 export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
@@ -13,7 +13,7 @@ git clone https://github.com/$GH_USERNAME/bb-app-source
 <br>
 
 #### Explore `database` manifests within `infrastructure` branch 
-Change to `bb-app-source` repo directory and Checkout `infrastructure` branch
+- Change to `bb-app-source` repo directory and Checkout `infrastructure` branch
 
 ```
 cd bb-app-source
@@ -28,18 +28,18 @@ tree database/
 Check `plain-text secret`
 
 ```
-cat ~/bb-app-source/database/secret-mysql.yml | grep -i "password"
+cat ~/bb-app-source/database/secret-mysql.yaml | grep -i "password"
 ```{{exec}}
 
 > We will delete this `plain-text-secret` and replace it with a secured `encrypted` secret
 
 Before `deleting` lets `copy` the `secret` to `root` directory
 ```
-cp ~/bb-app-source/database/secret-mysql.yml ~/secret-mysql.yml
+cp ~/bb-app-source/database/secret-mysql.yaml ~/secret-mysql.yaml
 ```{{exec}}
 
 ```
-rm ~/bb-app-source/database/secret-mysql.yml
+rm ~/bb-app-source/database/secret-mysql.yaml
 ```{{exec}}
 
 
