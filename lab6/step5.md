@@ -1,6 +1,4 @@
-> Please wait for 60 seconds. Setting up Step Pre-requisites
-
-#### Clone `block-butser` repo
+#### Clone `block-buster` repo
 Copy the below command, replace the value field and run it,
 
 ```
@@ -14,29 +12,52 @@ git clone https://github.com/$GH_USERNAME/block-buster
 
 <br>
 
-#### Create a `flux source` to pull `Helm Chart` from `OCI Repository`
-- Generate a `flux source` with the following spec:
-    - URL: `oci://ghcr.io/<<your-GITHUB-USERNAME>>/bb-app`
-    - Name: `7-demo-source-oci-helm-bb-app-7-7-1`
-    - Secret Ref: `ghcr-auth`
-    - Export Path: `~/block-buster/flux-clusters/dev-cluster/7-demo-source-oci-helm-bb-app-7-7-1.yml`
+> From version `7.7.x` onwards the application persists the `Highscore` to a `MySQL Database`
 
-<details><summary>Check Solution</summary>
+#### Explore `infrastructure` branch 
+Change to `bb-app-source` repo directory and Checkout `7-demo` branch
 
 ```
-flux create source helm 7-demo-source-oci-helm-bb-app-7-7-1 \
---url oci://ghcr.io/$GH_USERNAME/bb-app \
---secret-ref ghcr-auth \
---export > ~/block-buster/flux-clusters/dev-cluster/7-demo-source-oci-helm-bb-app-7-7-1.yml
-```{{exec}}
+cd bb-app-source
 
-</details>
+git checkout infrastructure
+```{{exec}}
 
 <br>
 
-#### Check the Generated YAML
+Check `database` directory
+
 ```
-cat ~/block-buster/flux-clusters/dev-cluster/7-demo-source-oci-helm-bb-app-7-7-1.yml
+tree database
+```{{exec}}
+
+<br>
+
+#### Deploy Database Manifests
+- Run the below `source` & `kustomize` commands to `fetch` and `deploy` all the manifests within the `database` directory 
+
+```
+export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
+```{{exec interrupt}}
+
+```
+flux create source git infra-source-git \
+--url https://github.com/$GH_USERNAME/bb-app-source \
+--branch infrastructure \
+--timeout 10s \
+--export > ~/block-buster/flux-clusters/dev-cluster/infra-source-git.yml
+```{{exec}}
+
+<br>
+
+```
+flux create kustomization infra-database-kustomize-git-mysql \
+--source GitRepository/infra-source-git \
+--prune true \
+--interval 10s \
+--target-namespace database \
+--path ./database  \
+--export > ~/block-buster/flux-clusters/dev-cluster/infra-database-kustomize-git-mysql.yml
 ```{{exec}}
 
 <br>

@@ -25,18 +25,20 @@
           "text": "step4.md"
         },
         {
-          "foreground": "foreground-5.sh",
-          "background": "background-5.sh",
-          "title": "5. Create Flux Helm Source",
+          "title": "5. Setup MySQL Database",
           "text": "step5.md"
         },
         {
-          "title": "6. Create Flux Helm Release",
+          "title": "6. Create Flux Helm Source",
           "text": "step6.md"
         },
         {
-          "title": "7. Check Flux Status and Application",
+          "title": "7. Create Flux Helm Release",
           "text": "step7.md"
+        },
+        {
+          "title": "8. Check Flux Status and Application",
+          "text": "step8.md"
         }
       ],
       "finish": {

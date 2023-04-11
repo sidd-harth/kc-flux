@@ -1,59 +1,53 @@
-#### Check Flux Status
-As soon as the manifests are pushed to the repository, Flux will pull manifests and reconcile the cluster to deploy all the manifests.
-
-<br>
-
-#### Check Flux Source Status
-- Run a `flux` cmd to `get` the `source` status using below spec:
-    - Type: `helm`
-    - Name: `7-demo-source-oci-helm-bb-app-7-7-1`
-
-<details><summary>Check Solution</summary>
-
-```
-flux reconcile source git flux-system
-
-flux get source helm 7-demo-source-oci-helm-bb-app-7-7-1
-```{{exec}}
-
-</details>
-
-<br>
-
-#### Check Flux HelmRelease Status
-- Run a `flux` cmd to `get` the `HelmRelease` status using below spec:
-    - Type: `helmrelease`
+#### Create a `flux helmrelease` to apply the manifets
+- Generate a `flux helmrelease` with the following spec:
     - Name: `7-demo-helm-release-oci-bb-app-7-7-1`
+    - Source: `HelmRepository/7-demo-source-oci-helm-bb-app-7-7-`
+    - Target Namespace: `7-demo`
+    - Timeout: `10s`
+    - Chart: `block-buster-helm-app`
+    - Chart Version: `7.7.1`
+    - Create Target Namespace: `true`
+    - Values: `~/flux-training/helm/values.yml`
+    - Export Path: `~/block-buster/flux-clusters/dev-cluster/7-demo-helm-release-oci-bb-app-7-7-1.yml`
 
 <details><summary>Check Solution</summary>
 
 ```
-flux get helmrelease 7-demo-helm-release-oci-bb-app-7-7-1
+flux create helmrelease 7-demo-helm-release-oci-bb-app-7-7-1 \
+--source HelmRepository/7-demo-source-oci-helm-bb-app-7-7-1 \
+--target-namespace 7-demo \
+--chart block-buster-helm-app  \
+--chart-version 7.7.1 \
+--create-target-namespace true \
+--values ~/flux-training/helm/values.yml \
+--export > ~/block-buster/flux-clusters/dev-cluster/7-demo-helm-release-oci-bb-app-7-7-1.yml
 ```{{exec}}
 
 </details>
 
 <br>
 
-#### Check Kubernetes Namespace
-A new namespace `7-demo` is created
+#### Check the Generated YAML
 ```
-k get ns
+cat ~/block-buster/flux-clusters/dev-cluster/7-demo-helm-release-oci-bb-app-7-7-1.yml
 ```{{exec}}
 
-Check the status of deployment, pod, service are in `RUNNING` state
+<br>
+
+#### Add, Commit, Push the changes
+> When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
+
 ```
-k -n 7-demo get all
+cd ~/block-buster
+git config --global user.email "fluxcd@killercoda.com"
+git config --global user.name "FluxCD-Killercoda"
+git pull
+git add .
+git commit -m 771-demo
+git push
 ```{{exec}}
 
-#### Access the application on its NodePort
-Now `access/play` Block Buster App - `version 7.7.1` using the below link:
-
-# [Play Block Buster App - 7.7.1]({{TRAFFIC_HOST1_30771}})
-
-> From v7.7.0, the game has a `High Score` field
-
-> Complete `Level 1` to play/start `Level 2`
+> Note the `commit id` displayed after the `git push` operation.
 
 <br>
 

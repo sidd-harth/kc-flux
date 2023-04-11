@@ -1,7 +1,14 @@
-#### Explore GitHub Repo
-- A repo named `bb-app-source` is cloned and available on this machine
-- Explore it `cd bb-app-source`
-- Open this [repository](https://github.com/sid-demo/bb-app-source) in browser tab and check branch **7-demo**
+#### Clone `bb-app-source` repo
+Copy the below command, replace the value field and run it,
+
+```
+export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
+```{{copy}}
+
+```
+cd ~
+git clone https://github.com/$GH_USERNAME/bb-app-source
+```{{exec}}
 
 <br>
 
