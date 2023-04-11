@@ -9,7 +9,6 @@ curl -s https://fluxcd.io/install.sh | sudo bash
 
 . <(flux completion bash)
 
-sleep 5
 
 cat <<EOF >>~/values.yml
 alertmanager:
