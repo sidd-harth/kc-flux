@@ -28,3 +28,4 @@ git clone https://github.com/sid-demo/bb-app-source
 kubectl taint node controlplane node-role.kubernetes.io/control-plane-
 
 apt install tree -y
+apt install jq -y 

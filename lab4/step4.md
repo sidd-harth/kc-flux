@@ -38,25 +38,4 @@ kubectl -n flux-system create secret generic minio-crds \
 
 <br>
 
-#### Commit Plain-text Secret to Git
-
-<details><summary>Save Secret to Block Buster Repo</summary>
-
-```
-mkdir ~/block-buster/flux-clusters/dev-cluster/flux-secrets
-
-kubectl -n flux-system create secret generic minio-crds \
---from-literal=accesskey=minioadmin \
---from-literal=secretkey=minioadmin -o yaml \
---dry-run=client > ~/block-buster/flux-clusters/dev-cluster/flux-secrets/minio-crds.yml
-```{{exec}}
-
-> For the time being we will store `PLAIN-TEXT` secrets in `GIT`. 
-
-> In later Lab/Session we will `ENCRYPT` the secret using `SOPS`, `Sealed Secrets`
-
-</details>
-
-<br>
-
 ###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
