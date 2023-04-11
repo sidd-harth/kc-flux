@@ -26,3 +26,7 @@ A `MinIO S3 Repo` is already install on this cluster.
         - Click Bucket Named: `bucket-bb-app`
             - Click `Upload Folder`
                 - Add `manifests` directory from `4-demo` branch
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

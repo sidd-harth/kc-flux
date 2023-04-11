@@ -31,3 +31,7 @@ Now access it via
 [ACCESS Flux User Interface]({{TRAFFIC_HOST1_9001}})
 - Username: `admin`
 - Password: `12345`
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

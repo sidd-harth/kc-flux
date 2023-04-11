@@ -55,3 +55,7 @@ git add .
 git commit -m 'delete database secret'
 git push
 ```{{exec}}
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

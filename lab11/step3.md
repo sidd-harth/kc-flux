@@ -19,3 +19,7 @@ kubectl -n database get po
 ```{{exec}}
 
 > Check that the po get restarted with `CreateContainerConfigError` or `Terminating` becuase it does not fint the `secret`
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

@@ -35,3 +35,7 @@ Now `access/play` Block Buster App - `version 7.8.0` using the below link:
 # [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
 
 > From v7.8.0, `High Score` is persisted
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

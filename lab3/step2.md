@@ -23,3 +23,7 @@ Check `image tag - 7.2.0` within `deployment.yml`
 ```
 cat ~/bb-app-source/manifests/deployment.yml | grep -i 7.2.0
 ```{{exec}}
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

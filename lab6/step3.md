@@ -60,3 +60,7 @@ helm push ~/bb-app-source/block-buster-helm-app-7.7.1.tgz oci://ghcr.io/$GH_USER
 #### Go to GitHub Package and checkout the new package - https://github.com/$GH_USERNAME?tab=packages
 
 > Replace $GH_USERNAME with your GitHub Username
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

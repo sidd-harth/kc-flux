@@ -34,3 +34,7 @@ kubectl apply -f ~/pod-monitor-and-grafana-dashboard.yml
 - Refresh both `Prometheus` and `Grafana` UI 
     - Within [Prometheus]({{TRAFFIC_HOST1_30202}}) we should see `Flux Targets`
     - Within [Grafana]({{TRAFFIC_HOST1_30101}}) we should see `Flux Dashboards`
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

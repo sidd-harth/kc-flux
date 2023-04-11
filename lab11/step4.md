@@ -77,3 +77,7 @@ kubectl create secret generic sops-gpg --from-file=sops.asc=sops-gpg.key -n flux
 ```{{exec}}
 
 </details>
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

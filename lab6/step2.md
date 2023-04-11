@@ -23,3 +23,7 @@ Check `image tag - 7.7.1` within `values.yaml`
 ```
 cat ~/bb-app-source/7.7.1/helm-chart/values.yaml | grep -i 7.7.1
 ```{{exec}}
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

@@ -50,3 +50,7 @@ flux get images repository 8-demo-image-repo-bb-app
 ### Check the Message of Previous command, it should mention: `successful scan: found 2 tag`
 
 > In next lab we will create an `Flux Image Policy` to get the `latest` image tag
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

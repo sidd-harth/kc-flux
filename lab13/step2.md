@@ -39,3 +39,7 @@ kubectl -n monitoring patch svc my-kube-prometheus-stack-prometheus -p '{"spec":
 
 > Notice that we `**do not**` have any `Dashboards` for `Flux`
 
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
+

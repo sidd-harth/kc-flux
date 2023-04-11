@@ -54,3 +54,7 @@ Now `access/play` Block Buster App - `version 7.6.0` using the below link:
 > From v7.6.0, the game has two `Levels`
 
 > Complete `Level 1` to play/start `Level 2`
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

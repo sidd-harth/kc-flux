@@ -31,3 +31,7 @@ flux get images all
 > Repository - `successful scan: found 2 tag`
 
 > Policy - Latest image tag for `docker.io/<<YOUR-DOCKER-USERNAME>>/bb-app-flux-demo-killercoda` resolved to: `7.8.1`
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*

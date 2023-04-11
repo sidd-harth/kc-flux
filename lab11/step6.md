@@ -31,3 +31,7 @@ k -n database get secrets  secret-mysql -o json | jq .data.password -r | base64 
 
 > In next step we will modify `Kustomization` to `decrypt` the `secret` before applying
 
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
+

@@ -41,3 +41,7 @@ Now `access/play` Block Buster App - `version 7.8.0` using the below link:
 # [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
 
 > In next lab we will use Automation controller to `automatically` update the `deployment.yaml` with new version.
+
+<br>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
