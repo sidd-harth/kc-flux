@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# not used, done in 5.sh
+
 flux create source git infra-source-git \
 --url https://github.com/sidd-harth/bb-app-source \
 --branch infrastructure \

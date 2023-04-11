@@ -21,10 +21,8 @@ curl -s https://fluxcd.io/install.sh | sudo bash
 
 . <(flux completion bash)
 
-sleep 2
-
 git clone https://github.com/sid-demo/bb-app-source
 
-k taint node controlplane node-role.kubernetes.io/control-plane-
+kubectl taint node controlplane node-role.kubernetes.io/control-plane-
 
 apt install tree -y

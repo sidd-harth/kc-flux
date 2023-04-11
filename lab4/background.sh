@@ -17,18 +17,14 @@ echo PS1='"\[\e[01;36m\]\u\[\e[01;37m\]@\[\e[01;33m\]\H\[\e[01;37m\]:\[\e[01;32m
 
 source ~/.bashrc
 
-k apply -f https://raw.githubusercontent.com/sid-demo/bb-app-source/4-demo/minio/minio-s3.yml
-
-sleep 5
+kubectl apply -f https://raw.githubusercontent.com/sid-demo/bb-app-source/4-demo/minio/minio-s3.yml
 
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 . <(flux completion bash)
 
-sleep 5
-
 git clone https://github.com/sid-demo/bb-app-source
 
-k taint node controlplane node-role.kubernetes.io/control-plane-
+kubectl taint node controlplane node-role.kubernetes.io/control-plane-
 
 apt install tree -y
