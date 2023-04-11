@@ -6,8 +6,6 @@ After 60 seconds, wait till all `PODS` are in `Running State` within `monitoring
 kubectl -n monitoring  get all
 ```{{exec}}
 
-<br>
-
 > If `Grafana` & `Prometheus` service type is not `NodePort`. Execute below patch commands.
 
 ```

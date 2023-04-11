@@ -7,7 +7,7 @@
 <br>
 
 #### Clone Flux2 Repo
-Run and observe the output of below commands
+- Run and observe the output of below commands
 
 ```
 git clone https://github.com/fluxcd/flux2
