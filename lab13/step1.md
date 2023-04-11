@@ -23,8 +23,7 @@ flux bootstrap github \
   --repository=block-buster \
   --path=flux-clusters/dev-cluster \
   --personal=true \
-  --private=false \
-  --components-extra="image-reflector-controller,image-automation-controller" 
+  --private=false
 ```{{exec}}
 
 GitHub Personal Access Token - PAT
