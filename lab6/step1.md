@@ -12,7 +12,7 @@ Copy the below command, replace the value field and run it,
 
 ```
 export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
-```{{copy}}
+```{{exec interrupt}}
 
 ```
 flux bootstrap github \
@@ -20,8 +20,7 @@ flux bootstrap github \
   --repository=block-buster \
   --path=flux-clusters/dev-cluster \
   --personal=true \
-  --private=false \
-  --version=v0.40.0
+  --private=false
 ```{{exec}}
 
 GitHub Personal Access Token - PAT
