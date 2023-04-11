@@ -17,6 +17,8 @@ We will use `flux` to connect to `Minio` and fetch the manifests.
 
 `flux` needs to authenticate aganist `Minio` and hence we will create a `K8S Secret` and use it as an refernece within `flux`.
 
+<br>
+
 #### K8S Secret
 - Create a K8S Secret with the following spec:
     - Secret Name: `minio-crds`

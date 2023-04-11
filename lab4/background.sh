@@ -25,7 +25,6 @@ curl -s https://fluxcd.io/install.sh | sudo bash
 
 git clone https://github.com/sid-demo/bb-app-source
 
-cd bb-app-source && git checkout 4-demo && cd ..
 
 kubectl taint node controlplane node-role.kubernetes.io/control-plane-
 
@@ -35,11 +34,3 @@ apt install jq -y
 curl -o /usr/local/bin/mc https://dl.min.io/client/mc/release/linux-amd64/mc
 chmod +x /usr/local/bin/mc
 mc --version
-
-CLUSTERIP=$(kubectl -n minio-dev get svc minio -o json | jq .spec.clusterIP -r)
-
-mc alias set myminio http://$CLUSTERIP:9000 minioadmin minioadmin
-
-mc mb myminio/bucket-bb-app
-
-mc cp ~/bb-app-source/manifests/ myminio/bucket-bb-app/manifests -r

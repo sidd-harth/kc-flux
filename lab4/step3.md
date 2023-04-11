@@ -1,8 +1,10 @@
 #### Explore MinIO S3 Repository
 
+> Please wait for 10 seconds, a background script will run at the start of this step
+
 A `MinIO S3 Repo` is already install on this cluster.
 
-> MinIO is like Amazon S3, but hosted locally. Minio is an object storage server that implements the same public API as Amazon S3.
+> MinIO is like Amazon S3, but hosted locally. It is an object storage server that implements the same public API as Amazon S3.
 
 <br>
 
