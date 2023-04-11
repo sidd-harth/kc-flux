@@ -25,7 +25,7 @@
         {
           "foreground": "foreground-4.sh",
           "background": "background-4.sh",
-          "title": "4. Setup Bitnami Sealed Secret Components",
+          "title": "4. Setup Bitnami SealedSecret Components",
           "text": "step4.md"
         },
         {

@@ -21,8 +21,8 @@ flux reconcile source git infra-source-git
 <br>
 
 #### Check `secret` within `database` namespace
-1. Flux will pull `sealed-secret`
-2. The `sealed-secret-controller` will decrypt the secret before applying it.
+1. Flux will pull `sealed-secret` and apply it
+2. The `sealed-secret-controller` will make use of the `webhooks` to decrypt the secret before applying it.
 
 ```
 kubectl -n database get secret secret-mysql -o json | jq .data.password -r | base64 -d

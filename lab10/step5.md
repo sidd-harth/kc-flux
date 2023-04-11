@@ -1,30 +1,3 @@
-#### Fetch the Public Cert of Sealed Secret Controller
-- Follow below spec:
-    - Command: `kubeseal` (already installed)
-    - Controller Name: `sealed-secrets-controller`
-    - Controller Namespace: `kube-system`
-    - Export Path: : `~/sealed-secret.pub`
-
-<details><summary>Check Solution</summary>
-
-```
-kubeseal \
---fetch-cert \
---controller-name sealed-secrets-controller \
---controller-namespace kube-system > ~/sealed-secret.pub
-```{{exec}}
-
-</details>
-
-<br>
-
-#### Check Exported Public Cert
-```
-cat  ~/sealed-secret.pub
-```{{exec}}
-
-<br>
-
 #### Encrypt the Secret using `kubeseal`
 - Follow the below spec to encrypt the secret manifest:
     - Command: `kubeseal` (already installed)
@@ -37,7 +10,7 @@ cat  ~/sealed-secret.pub
 <details><summary>Check Solution</summary>
 
 ```
-kubeseal -o yaml --scope cluster-wide --cert ~/sealed-secret.pub < ~/secret-mysql.yml >  ~/bb-app-source/database/sealed-secret-mysql.yml
+kubeseal -o yaml --scope cluster-wide --cert ~/sealed-secret.pub < ~/secret-mysql.yaml >  ~/bb-app-source/database/sealed-secret-mysql.yaml
 ```{{exec}}
 
 </details>
@@ -46,7 +19,7 @@ kubeseal -o yaml --scope cluster-wide --cert ~/sealed-secret.pub < ~/secret-mysq
 
 #### Check the Generated Encrypted Secret
 ```
-cat  ~/bb-app-source/database/sealed-secret-mysql.yml
+cat  ~/bb-app-source/database/sealed-secret-mysql.yaml
 ```{{exec}}
 
 <br>

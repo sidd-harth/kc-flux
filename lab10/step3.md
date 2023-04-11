@@ -31,7 +31,7 @@ kubectl -n database get po
 <br>
 
 #### Access the Application
-Block Buster App - `version 7.9.0` `should not` be accessible,
+Block Buster App - `version 7.9.0 should not` be accessible,
 
 # [Play Block Buster App - 7.9.0]({{TRAFFIC_HOST1_30009}})
 
