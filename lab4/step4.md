@@ -1,17 +1,3 @@
-#### Clone `block-butser` repo
-Copy the below command, replace the value field and run it,
-
-```
-export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
-```{{copy}}
-
-```
-cd ~
-git clone https://github.com/$GH_USERNAME/block-buster
-```{{exec}}
-
-<br>
-
 #### Flux Connecting to Minio
 We will use `flux` to connect to `Minio` and fetch the manifests.
 
@@ -37,6 +23,20 @@ kubectl -n flux-system create secret generic minio-crds \
 ```{{exec}}
 
 </details>
+
+<br>
+
+#### For next Step, Clone `block-butser` repo
+Copy the below command, replace the value field and run it,
+
+```
+export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
+```{{copy}}
+
+```
+cd ~
+git clone https://github.com/$GH_USERNAME/block-buster
+```{{exec}}
 
 <br>
 

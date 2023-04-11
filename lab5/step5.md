@@ -3,7 +3,7 @@ As soon as the manifests are pushed to the repository, Flux will pull manifests 
 
 <br>
 
-#### Check Flux Source Status
+#### Check Flux `Source` Status
 - Run a `flux` cmd to `get` the `source` status using below spec:
     - Type: `helm`
     - Name: `6-demo-source-helm-bb-app`
@@ -20,7 +20,7 @@ flux get source helm 6-demo-source-helm-bb-app
 
 <br>
 
-#### Check Flux HelmRelease Status
+#### Check Flux `HelmRelease` Status
 - Run a `flux` cmd to `get` the `HelmRelease` status using below spec:
     - Type: `helmrelease`
     - Name: `6-demo-helm-release-bb-app`
@@ -29,6 +29,21 @@ flux get source helm 6-demo-source-helm-bb-app
 
 ```
 flux get helmrelease 6-demo-helm-release-bb-app
+```{{exec}}
+
+</details>
+
+<br>
+
+#### Check Flux `HelmChart` Status
+- Run a `flux` cmd to `get` the `HelmChart` status using below spec:
+    - Type: `source`
+    - Sub-type: `chart`
+
+<details><summary>Check Solution</summary>
+
+```
+flux get source chart
 ```{{exec}}
 
 </details>

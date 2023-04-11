@@ -5,6 +5,7 @@
         - `Install` instructions
         - `Templates`
         - `Default Values`
+        
 <br>
 
 #### Explore `values.yml` branch 
