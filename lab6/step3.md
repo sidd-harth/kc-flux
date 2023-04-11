@@ -5,7 +5,8 @@
 <br>
 
 #### Package Helm Chart
-- Helm CLI is already installed, follow below spec to create a Helm package:
+- Helm CLI is already installed
+- Create a Helm package at the below path
     - Path: `~/bb-app-source/7.7.1/helm-chart/`
 
 <details><summary>Check Solution</summary>

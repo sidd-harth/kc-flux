@@ -3,7 +3,7 @@
 # not used, done in 5.sh
 
 flux create source git infra-source-git \
---url https://github.com/sidd-harth/bb-app-source \
+--url https://github.com/sid-demo/bb-app-source \
 --branch infrastructure \
 --timeout 10s \
 --export > ~/block-buster/flux-clusters/dev-cluster/infra-source-git.yml

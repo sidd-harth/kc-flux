@@ -5,6 +5,7 @@
     - Target Namespace: `7-demo`
     - Timeout: `10s`
     - Chart: `block-buster-helm-app`
+    - Chart Version: `7.7.1`
     - Create Target Namespace: `true`
     - Values: `~/flux-training/helm/values.yml`
     - Export Path: `~/block-buster/flux-clusters/dev-cluster/7-demo-helm-release-oci-bb-app-7-7-1.yml`

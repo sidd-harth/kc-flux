@@ -18,7 +18,7 @@ flux create secret oci ghcr-auth \
 --url ghcr.io \
 --username $GH_USERNAME \
 --password your-github-pesonal-access-token-pat>>>>>>>>
-```{{copy}}
+```{{exec interrupt}}
 
 </details>
 
