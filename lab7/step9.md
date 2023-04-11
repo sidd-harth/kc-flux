@@ -28,7 +28,7 @@ flux get images repository 8-demo-image-repo-bb-app
 
 ```
 kubectl -n flux-system get imagerepositories.image.toolkit.fluxcd.io 8-demo-image-repo-bb-app -o yaml | grep -i scanresult -A5
-```
+```{{exec}}
 
 <br>
 

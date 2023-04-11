@@ -5,8 +5,6 @@
     - Color: `#A01B40` on line 11 (both files)
     - Version: `7.8.1 (minor color changes)` on line 36 (both files)
 
-<br>
-
 ```
 sed -i "s/80F1BE/A01B40/g" ~/bb-app-source/src/index.php
 sed -i "s/80F1BE/A01B40/g" ~/bb-app-source/src/level2.php
@@ -57,7 +55,7 @@ flux get images repository 8-demo-image-repo-bb-app
 
 ```
 kubectl -n flux-system get imagerepositories.image.toolkit.fluxcd.io 8-demo-image-repo-bb-app -o yaml | grep -i scanresult -A5
-```
+```{{exec}}
 <br>
 
 > In next lab we will create an `Flux Image Policy` to get the `latest` image tag

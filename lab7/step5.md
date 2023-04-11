@@ -5,8 +5,6 @@ Check existing `image name` within `deployment.yml`
 cat ~/bb-app-source/manifests/deployment.yml | grep -i "7.8.0"
 ```{{exec}}
 
-<br>
-
 In this step we will `update` the image withn  `bb-app-source` repo `manifests/deployment.yml` using `sed`
 
 ```
@@ -21,6 +19,7 @@ Check Updated `image name` within `deployment.yml`
 cat ~/bb-app-source/manifests/deployment.yml | grep -i "7.8.0"
 ```{{exec}}
 
+<br>
 
 #### Add, Commit, Push the changes to `bb-source-app` repo
 > When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.

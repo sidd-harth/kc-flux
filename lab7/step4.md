@@ -35,7 +35,7 @@ docker tag siddharth67/block-buster-dev:7.8.0  $DOCKER_USERNAME/bb-app-flux-demo
 docker push $DOCKER_USERNAME/bb-app-flux-demo-killercoda:7.8.0
 ```{{exec}}
 
-> Note - if you are re-doing this lab, it is recommended to delete the `bb-app-flux-demo-killercoda` reposiotry within your `Dockerhub`
+> Note - If you are re-doing this lab, it is recommended to `delete` the `bb-app-flux-demo-killercoda` repository within your `Dockerhub` account
 
 <br>
 
