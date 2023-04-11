@@ -23,7 +23,7 @@ git checkout infrastructure
 tree database/
 ```{{exec}}
 
-> We will delete this `sealed-secret-mysql` and replace it with a `Mozilla SOP Encrypted` secret
+> We will delete this `sealed-secret-mysql.yaml` and replace it with a `Mozilla SOP Encrypted` secret
 
 ```
 rm ~/bb-app-source/database/sealed-secret-mysql.yml

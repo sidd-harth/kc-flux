@@ -27,9 +27,9 @@ k -n database get secrets  secret-mysql -o json | jq .data.password -r | base64 
 
 > It just print's the `SOPS` encrypted string which starts with `ENC[AES256_GCM,data:05......`
 
-> As of know, `Kustomization` is not doing any decryption.
+> As of know, `Flux Kustomization` is not `decrypting` the secret
 
-> In next step we will modify `Kustomization` to `decrypt` the `secret` before applying
+> In next step we will modify `Flux Kustomization` object to `decrypt` the `secret` before applying.
 
 <br>
 

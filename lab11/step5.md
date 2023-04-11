@@ -11,7 +11,9 @@ sops -v
 
 <br>
 
-#### Encrypt Plain Secret
+#### Encrypt Plain Text Secret
+- A `Plain Text Secret` is provided in the `root` directory
+
 ```
 cat ~/secret-mysql.yml
 ```{{exec}}
@@ -43,7 +45,7 @@ cat ~/secret-mysql.yml
 > Move encrypted secret to `bb-app-source` repo and commit
 
 ```
-cp ~/secret-mysql.yml ~/bb-app-source/database/sops-secret-mysql.yml
+cp ~/secret-mysql.yml ~/bb-app-source/database/sops-secret-mysql.yaml
 ```{{exec}}
 
 

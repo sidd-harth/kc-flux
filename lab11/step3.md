@@ -1,5 +1,3 @@
-> Database namespace and resource were created behind the scenes in one of our earlier labs
-
 #### Check `database` namespace
 ```
 kubectl -n database get po,deploy,svc,secret,cm
@@ -18,7 +16,7 @@ kubectl -n database rollout restart deployment mysql
 kubectl -n database get po
 ```{{exec}}
 
-> Check that the po get restarted with `CreateContainerConfigError` or `Terminating` becuase it does not fint the `secret`
+> Check that the po get restarted with `CreateContainerConfigError` or `Terminating` becuase it does not find the `secret`
 
 <br>
 

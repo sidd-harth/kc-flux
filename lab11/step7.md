@@ -1,5 +1,5 @@
 #### Clone `block-butser` repo
-Copy the below command, replace the value field and run it,
+- Copy the below command, replace the value field and run it,
 
 ```
 export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
@@ -13,7 +13,9 @@ git clone https://github.com/$GH_USERNAME/block-buster
 <br>
 
 #### Modify Kustomization to add decryption spec:
-Here `secretRef` is the secret which we created in a earlier step
+- Here `secretRef` is the secret which we created in a `Step 4`
+- This secret contains the `GPG Private Key`
+
 ```
 cat <<EOF >>~/block-buster/flux-clusters/dev-cluster/infra-database-kustomize-git-mysql.yml
   decryption:
@@ -23,6 +25,14 @@ cat <<EOF >>~/block-buster/flux-clusters/dev-cluster/infra-database-kustomize-gi
 EOF
 ```{{exec}}
 
+<br>
+
+#### Check modified Kustomization object
+```
+cat ~/block-buster/flux-clusters/dev-cluster/infra-database-kustomize-git-mysql.yml
+```{{exec}}
+
+<br>
 
 #### Add, Commit, Push the changes to `block-buster` repo
 > When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.

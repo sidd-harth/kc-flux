@@ -1,5 +1,5 @@
 #### Generate Key-Pair
-Execute below commnad, check:
+- Execute below commnad, check:
     - Key-Length
     - Name-Comment
     - Name-Real
@@ -19,23 +19,23 @@ Name-Email: admin@bb.com
 EOF
 ```{{exec}}
 
-> Make a note of the `FingerPrint` displayed, `gpg: key **xxxxxxxxxxxxxxxx** marked as ultimately trusted`
+> Make a note of the `FingerPrint` displayed, `gpg: key xxxxxxxxxxxxxxxx marked as ultimately trusted`
 
 ```
 export FINGERPRINT=<<replace-finger-print>>
-```{{exec}}
+```{{exec interrupt}}
 
 <br>
 
 #### List Keys
-List Public Key
+- List Public Key
 ```
 gpg --list-public-keys $FINGERPRINT
 ```{{exec}}
 
 <br>
 
-List Private Key
+- List Private Key
 ```
 gpg --list-secret-keys $FINGERPRINT
 ```{{exec}}
@@ -43,7 +43,7 @@ gpg --list-secret-keys $FINGERPRINT
 <br>
 
 #### Export Keys
-Export Public Key
+- Export Public Key
 ```
 gpg --export --armor $FINGERPRINT > ~/sops-gpg.pub
 
@@ -52,7 +52,7 @@ cat ~/sops-gpg.pub
 
 <br>
 
-Export Private Key
+- Export Private Key
 ```
 gpg --export-secret-key --armor $FINGERPRINT > ~/sops-gpg.key
 
