@@ -27,7 +27,8 @@ flux create source oci 10-demo-source-oci-bb-app \
 <br>
 
 #### Modify Source to add Cosign Verify spec:
-Here `secretRef` is the secret which we created in a earlier `step 5`
+- Here `secretRef` is the secret which we created in a `step 5`
+- This secret contains the public key of Cosign
 ```
 cat <<EOF >>~/block-buster/flux-clusters/dev-cluster/10-demo-source-oci-bb-app.yml
   verify:

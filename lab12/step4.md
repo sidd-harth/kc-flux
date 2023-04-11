@@ -41,7 +41,7 @@ cosign sign --key ~/cosign.key ghcr.io/$GH_USERNAME/bb-app:7.10.0-$OCI_TAG
 
 > Cosign `Private Key` is used for signing
 
-> Refer Github Packages for this artifact - A new `signature` is pushed by cosign
+> Refer Github Packages for this artifact - A new `signature` - `.sig` is pushed by cosign
 
 <br>
 

@@ -21,7 +21,7 @@ flux get source oci 10-demo-source-oci-bb-app
 We can check the source is getting verified using below `kubectl` command,
 
 ```
-kubectl -n flux-system get ocirepositories.source.toolkit.fluxcd.io 10-demo-source-oci-bb-app -o yaml | grep -i Verified
+kubectl -n flux-system get ocirepositories.source.toolkit.fluxcd.io 10-demo-source-oci-bb-app -o yaml | grep -i Verified -B5
 ```{{exec}}
 
 
