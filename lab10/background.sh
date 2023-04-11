@@ -9,8 +9,6 @@ curl -s https://fluxcd.io/install.sh | sudo bash
 
 . <(flux completion bash)
 
-sleep 5
-
 wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.19.5/kubeseal-0.19.5-linux-amd64.tar.gz
 tar -xvzf kubeseal-0.19.5-linux-amd64.tar.gz
 mv kubeseal /usr/local/bin/kubeseal
