@@ -1,17 +1,20 @@
 #### Update the `BACKGROUND COLOR`
 - Update following below spec:
-    - File: `~/bb-app-source/src/index.php`
-    - Color: `#A01B40` on line 11
-    - Version: `7.8.1 (minor color changes)` on line 36
+    - File 1: `~/bb-app-source/src/index.php`
+    - File 2: `~/bb-app-source/src/level2.php`
+    - Color: `#A01B40` on line 11 (both files)
+    - Version: `7.8.1 (minor color changes)` on line 36 (both files)
 
 <br>
 
 ```
 sed -i "s/80F1BE/A01B40/g" ~/bb-app-source/src/index.php
+sed -i "s/80F1BE/A01B40/g" ~/bb-app-source/src/level2.php
 ```{{exec}}
 
 ```
 sed -i "s/7.8.0/7.8.1 (minor color changes)/g" ~/bb-app-source/src/index.php
+sed -i "s/7.8.0/7.8.1 (minor color changes)/g" ~/bb-app-source/src/level2.php
 ```{{exec}}
 
 <br>
