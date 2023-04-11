@@ -12,7 +12,7 @@ git clone https://github.com/$GH_USERNAME/block-buster
 
 <br>
 
-#### Deploy the manifests using flux
+#### Deploy the manifests using `Flux`
 - We will using Git Source and Kustomization `flux controllers`
 - Since we have already done these steps multiple times in earlier labs, please execute the below commands directly.
 

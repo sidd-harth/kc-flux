@@ -1,9 +1,12 @@
 #### Explore `flux-system` Namespace
 - Checkout
     - Two new `deployments` should be `RUNNING`
-        - `image-reflector-controller`
-        - `image-automation-controller`
-    - Two new `crds`
+        1. `image-reflector-controller`
+        2. `image-automation-controller`
+    - Three new `crds`
+        1. `imagepolicies`
+        2. `imagerepositories`
+        3. `imageupdateautomations`
 
 ```
 kubectl -n flux-system get po,deploy

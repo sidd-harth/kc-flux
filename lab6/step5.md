@@ -33,12 +33,21 @@ tree database
 
 <br>
 
-#### Deploy Database Manifests
+#### Deploy Database Manifests using `Flux`
 - Run the below `source` & `kustomize` commands to `fetch` and `deploy` all the manifests within the `database` directory 
+- Since we have already done these steps multiple times in earlier labs, please execute the below commands directly.
+
+<details><summary>Flux Source</summary>
 
 ```
 export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME
 ```{{exec interrupt}}
+
+</details>
+
+<br>
+
+<details><summary>Flux Kustomization</summary>
 
 ```
 flux create source git infra-source-git \
@@ -47,6 +56,8 @@ flux create source git infra-source-git \
 --timeout 10s \
 --export > ~/block-buster/flux-clusters/dev-cluster/infra-source-git.yml
 ```{{exec}}
+
+</details>
 
 <br>
 

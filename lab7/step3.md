@@ -33,19 +33,4 @@ cat ~/bb-app-source/manifests/deployment.yml | grep -i "siddharth67/block-buster
 
 <br>
 
-#### Add, Commit, Push the changes to `bb-source-app` repo
-> When prompted for `password` use the `GitHub PAT - Personal Access Token` used in earlier steps.
-
-```
-cd ~/bb-app-source
-git config --global user.email "fluxcd@killercoda.com"
-git config --global user.name "FluxCD-Killercoda"
-git pull
-git add .
-git commit -m 'updated image'
-git push
-```{{exec}}
-
-<br>
-
 ###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
