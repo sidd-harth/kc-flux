@@ -9,7 +9,7 @@
 Change to `bb-app-source` repo directory and Checkout `2-demo` branch
 
 ```
-cd bb-app-source
+cd ~/bb-app-source
 
 git checkout 2-demo
 
