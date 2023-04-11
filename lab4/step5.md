@@ -1,8 +1,17 @@
+> MinIO is running on this `Kubernetes` cluster within `minio-dev` namespace
+
+```
+kubectl -n minio-dev get all
+```{{exec}}
+
+<br>
+
 #### Create a `flux source` to pull from `Minio S3 Bucket`
 - Generate a `flux source` with the following spec:
     - Name: `4-demo-source-minio-s3-bucket-bb-app`
     - Bucket Name: `bucket-bb-app`
-    - Secret Ref: `minio.minio-dev.svc.cluster.local:9000`
+    - Secret Ref: `minio-crds`
+    - Endpoint: `minio.minio-dev.svc.cluster.local:9000`
     - Provider: `generic`
     - Insecure: `true`
     - Export Path: `~/block-buster/flux-clusters/dev-cluster/4-demo-source-minio-s3-bucket-bb-app.yml`
