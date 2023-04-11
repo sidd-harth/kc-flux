@@ -1,4 +1,4 @@
-#### Check Flux Source Status
+#### Note - Flux
 As soon as the manifests are pushed to the repository, Flux will pull manifests and reconcile the cluster to deploy all the manifests.
 
 <br>
@@ -37,7 +37,7 @@ flux get kustomization flux-system
 
 <br>
 
-##### Check Kubernetes Namespace
+#### Check Kubernetes Namespace
 A new namespace `1-demo` is created
 ```
 k get ns
