@@ -26,8 +26,8 @@ flux get images policy 8-demo-image-policy-bb-app
 
 #### Check Image Tag within `Deployment`
 - The `ImagePolicy` job is to find out the latest image tag.
-- It does not update the deploy/git repo.
-- Run the be command and check that the image tag is still `7.8.0`
+- It will neither update the deployment nor the git reposiotry.
+- Run the below command and check that the image tag is still `7.8.0`
 
 ```
 kubectl -n 8-demo get deployment -o wide | grep -i killercoda

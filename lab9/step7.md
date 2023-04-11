@@ -1,6 +1,6 @@
 #### Index
 - In this step we will 
-    - Create a `Deploy key` using flux, it will be saved as a `secret` in `flux-system` namespace
+    - Create a `Deploy key` using `Flux CLI`, it will be saved as a `secret` in `flux-system` namespace
     - Add it as a `Deploy Key` to `bb-app-source` repo
     - Add it as a `secret-ref` to the `8-demo-source-git-bb-app` Git Source 	
 
@@ -30,14 +30,14 @@ flux create secret git 8-demo-git-bb-app-auth \
 
 > Previous command outputs a `DEPLOY KEY` copy it starting from `ecdsa-sha2-nistp521 .... `
 
-<br>
-
 #### Add `Deploy Key` to `bb-app-source` repo
 - Go to your `bb-app-source` repo and add a deploy key following below steps:
     - [Click and Follow Steps 3,4,5,6,7,8,9](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#set-up-deploy-keys)
         - Title: `flux-key`
         - Key: `copy-paste from previous command output`
         - Allow Write Access: `Enable` 
+
+<img src="./deploy-key-lab-9.png">
 
 <br>
 

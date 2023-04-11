@@ -1,5 +1,5 @@
 #### Clone `block-butser` repo
-Copy the below command, replace the value field and run it,
+- Copy the below command, replace the value field and run it,
 
 ```
 export GH_USERNAME=REPLACE-WITH-YOUR-GITHUB-USERNAME

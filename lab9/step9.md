@@ -11,7 +11,7 @@ flux get images update 8-demo-image-update-bb-app
 
 </details>
 
-> Check the Message of Previous command, it should mention, `.... last commit ....`
+> Check the Message of Previous command, it should mention, `committed and pushed ....`
 
 #### Check Deployment using new `7.8.1 image tag`
 ```

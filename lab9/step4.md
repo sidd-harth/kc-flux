@@ -20,11 +20,13 @@ flux get images update 8-demo-image-update-bb-app
 
 > Check the Message of Previous command, it should mention, `no updates made`
 
-<br>
-
-We need to add a `marker` to tell Flux which policy to use when updating the container image.
-
-The `marker` needs to be added in ` deployment.yml` within `bb-app-source` repo in `8-demo` branch
+- The reason for `no updates made`,
+    1. Flux does not know which file/manifest needs to be updated
+- We need to add a `marker` to tell Flux,
+    1. which `manifest` or `line` needs to be updated and
+    2. which `policy` to use when updating the container image.
+- The `marker` needs to be added to
+    1. `deployment.yml` within `bb-app-source` repo in `8-demo` branch
 
 <br>
 

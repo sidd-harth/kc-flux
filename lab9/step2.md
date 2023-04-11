@@ -3,7 +3,10 @@
     - Two new `deployments` should be `RUNNING`
         - `image-reflector-controller`
         - `image-automation-controller`
-    - Two new `crds`
+    - Three new `crds`
+        1. `imagepolicies`
+        2. `imagerepositories`
+        3. `imageupdateautomations`
 
 ```
 kubectl -n flux-system get po,deploy
@@ -14,7 +17,7 @@ kubectl get crds | grep -i image
 <br>
 
 #### Check Flux Repository and Policy Status
-In the previous lab we have created a `Flux Repository` Object, lets check it's Status.
+In the previous labs we have created a `Flux Repository` and `Flux Policy` objects, lets check their Status.
 - Run a `flux` cmd to `get` the `image` status using below spec:
     - Type: `all`
 
