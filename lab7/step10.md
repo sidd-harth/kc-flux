@@ -50,7 +50,15 @@ flux get images repository 8-demo-image-repo-bb-app
 
 <br>
 
-### Check the Message of Previous command, it should mention: `successful scan: found 2 tag`
+#### Chekout the `Tags` found by `Flux ImageRepository`
+- Check the Message of Previous command, it should mention: `successful scan: found 2 tag`
+    - Run below command and check the response.
+    - It should display tag - `7.8.0` & `7.8.1`
+
+```
+kubectl -n flux-system get imagerepositories.image.toolkit.fluxcd.io 8-demo-image-repo-bb-app -o yaml | grep -i scanresult -A5
+```
+<br>
 
 > In next lab we will create an `Flux Image Policy` to get the `latest` image tag
 
