@@ -24,23 +24,16 @@ flux get images policy 8-demo-image-policy-bb-app
 
 <br>
 
-#### Check Kubernetes Namespace
-A new namespace `8-demo` is created
+#### Check Image Tag within `Deployment`
+- The `ImagePolicy` job is to find out the latest image tag.
+- It does not update the deploy/git repo.
+- Run the be command and check that the image tag is still `7.8.0`
+
 ```
-k get ns
+kubectl -n 8-demo get deployment -o wide | grep -i killercoda
 ```{{exec}}
 
-Check the status of deployment, pod, service are in `RUNNING` state
-```
-k -n 8-demo get all
-```{{exec}}
-
-#### Access the application on its NodePort
-Now `access/play` Block Buster App - `version 7.8.0` using the below link:
-
-# [Play Block Buster App - 7.8.0]({{TRAFFIC_HOST1_30008}})
-
-> In next lab we will use Automation controller to `automatically` update the `deployment.yaml` with new version.
+> In next lab we will use Automation controller to `automatically` update the `deployment.yaml` with new image tag.
 
 <br>
 
