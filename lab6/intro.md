@@ -1,7 +1,11 @@
 
 
-In this lab we'll learn how to Push & Deploy Helm Charts from OCI Repo using **Flux** Controller within a Kubernetes Cluster.
+In this lab we'll learn how to Push & Deploy Helm Charts to/from OCI Repo using **Flux** Controllers within a Kubernetes Cluster.
 
-This lab is part of my [Udemy Course](https://www.udemy.com/user/siddharth-barahalikar/)
+> Udemy Course - [FluxCD 101](https://www.udemy.com/course/gitops-flux)
 
-**HAVE FUN**
+> Coupon Code - **GITOPS-FLUX-APR-2023**
+
+<a href="https://www.udemy.com/course/gitops-flux" style="text-align: center"><img src="./FluxCD-101-Udemy-Image-small.png" align="center"></a>
+
+###### ****If you face any issue or have a new suggestion, please raise it here: [issues tracker](https://github.com/sidd-harth/fluxcd-tracker/issues)*
